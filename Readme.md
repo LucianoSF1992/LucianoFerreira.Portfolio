@@ -1,6 +1,12 @@
-# 🚀 Luciano Silva Ferreira — Portfólio
+# 🚀 Luciano Silva Ferreira — Portfólio Profissional
 
-Portfólio profissional desenvolvido em ASP.NET Core Razor Pages, apresentando projetos, competências e formulário de contato funcional.
+![.NET](https://img.shields.io/badge/.NET-9.0-purple)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET-Core-blue)
+![Status](https://img.shields.io/badge/status-online-success)
+
+Portfólio profissional desenvolvido com ASP.NET Core Razor Pages para apresentar projetos, habilidades técnicas e um formulário de contato funcional.
+
+---
 
 ## 🧰 Tecnologias utilizadas
 
@@ -13,24 +19,30 @@ Portfólio profissional desenvolvido em ASP.NET Core Razor Pages, apresentando p
 - Bootstrap
 - JavaScript
 
+---
+
 ## ✨ Funcionalidades
 
-- ✅ Página inicial institucional
-- ✅ Seção Sobre
-- ✅ Listagem de projetos
-- ✅ Formulário de contato com envio de email
-- ✅ Layout responsivo
-- ✅ Deploy em nuvem
+- ✅ Página inicial institucional  
+- ✅ Seção Sobre  
+- ✅ Listagem de projetos  
+- ✅ Formulário de contato com envio de email  
+- ✅ Layout responsivo  
+- ✅ Deploy em nuvem  
+
+---
 
 ## 🌐 Acesso online
 
-🔗 Em breve…
+🔗 https://www.lucianoferreiradev.com
+
+---
 
 ## ⚙️ Como executar localmente
 
 ```bash
-git clone https://github.com/SEU_USUARIO/SEU_REPO.git
-cd SEU_REPO
+git clone https://github.com/LucianoSF1992/LucianoFerreira.Portfolio.git
+cd LucianoFerreira.Portfolio
 dotnet run
 
 👨‍💻 Autor
