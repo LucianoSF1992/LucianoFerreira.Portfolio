@@ -1,0 +1,101 @@
+﻿@page
+@model ProjetosModel
+@{
+    ViewData["Title"] = "Projetos";
+}
+
+<section class="projects-hero text-white text-center d-flex align-items-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Projetos</h1>
+        <p class="lead mt-3">
+            Aplicações desenvolvidas com foco em organização, escalabilidade e boas práticas.
+        </p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+
+        <h3 class="fw-bold mb-4">🚀 Projetos Principais</h3>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-4">
+                <div class="project-card p-4 h-100">
+                    <h5 class="fw-bold">Sistema de Treinos para Academias</h5>
+                    <span class="badge bg-secondary mb-3">Em desenvolvimento</span>
+
+                    <p>
+                        Plataforma SaaS para gestão de treinos, alunos e acompanhamento
+                        de evolução física.
+                    </p>
+
+                    <p class="small text-muted">
+                        C# • ASP.NET Core • Entity Framework • SQL Server
+                    </p>
+
+                    <button class="btn btn-outline-dark btn-sm" disabled>
+                        Em desenvolvimento
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="project-card p-4 h-100">
+                    <h5 class="fw-bold">Sistema de Agendamento de Serviços</h5>
+                    <span class="badge bg-secondary mb-3">Em desenvolvimento</span>
+
+                    <p>
+                        Sistema web para agendamento online com controle de horários
+                        e clientes.
+                    </p>
+
+                    <p class="small text-muted">
+                        C# • ASP.NET Core • SQL Server
+                    </p>
+
+                    <button class="btn btn-outline-dark btn-sm" disabled>
+                        Em desenvolvimento
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="project-card p-4 h-100">
+                    <h5 class="fw-bold">Sistema de Controle de Estoque de Restaurantes</h5>
+                    <span class="badge bg-secondary mb-3">Em desenvolvimento</span>
+
+                    <p>
+                        Sistema web para controlar o estoque de restaurantes.
+                    </p>
+
+                    <p class="small text-muted">
+                        C# • ASP.NET Core • SQL Server
+                    </p>
+
+                    <button class="btn btn-outline-dark btn-sm" disabled>
+                        Em desenvolvimento
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="my-5" />
+
+        <h3 class="fw-bold mb-4">💻 Outros Projetos</h3>
+
+        <div class="project-card p-4">
+            <h5 class="fw-bold">Repositórios no GitHub</h5>
+            <p>
+                Aplicações web, APIs REST e projetos práticos desenvolvidos
+                com foco em aprendizado contínuo e boas práticas.
+            </p>
+
+            <a href="https://github.com/LucianoSF1992" target="_blank" class="btn btn-dark btn-sm">
+                Ver no GitHub
+            </a>
+        </div>
+
+    </div>
+</section>

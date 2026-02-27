@@ -1,0 +1,19 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+
+# configs sensíveis
+appsettings.Development.json
+.env
+
+# publish
+publish/
+out/
+
+# Rider / VSCode
+.idea/
+.vscode/
