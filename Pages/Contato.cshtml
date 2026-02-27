@@ -26,25 +26,27 @@
 
         <div asp-validation-summary="All" class="text-danger"></div>
 
-        <form method="post" class="contact-card p-4 mx-auto contact-form">
+        <form method="POST" action="action="
+              https://formspree.io/f/SEU_ID?next=https://lucianoferreiradev.com/ContatoSucesso"
+              class="contact-card p-4 mx-auto contact-form">
 
             <div class="mb-3">
-                <label asp-for="Contato.Nome" class="form-label"></label>
-                <input asp-for="Contato.Nome" class="form-control" />
-                <span asp-validation-for="Contato.Nome" class="text-danger"></span>
+                <label class="form-label">Nome</label>
+                <input name="name" class="form-control" required />
             </div>
 
             <div class="mb-3">
-                <label asp-for="Contato.Email" class="form-label"></label>
-                <input asp-for="Contato.Email" class="form-control" />
-                <span asp-validation-for="Contato.Email" class="text-danger"></span>
+                <label class="form-label">Email</label>
+                <input name="email" type="email" class="form-control" required />
             </div>
 
             <div class="mb-3">
-                <label asp-for="Contato.Mensagem" class="form-label"></label>
-                <textarea asp-for="Contato.Mensagem" class="form-control" rows="4"></textarea>
-                <span asp-validation-for="Contato.Mensagem" class="text-danger"></span>
+                <label class="form-label">Mensagem</label>
+                <textarea name="message" class="form-control" rows="4" required></textarea>
             </div>
+
+            <!-- opcional: assunto do email -->
+            <input type="hidden" name="_subject" value="Novo contato do portfólio" />
 
             <button type="submit" class="btn btn-dark w-100">
                 Enviar Mensagem

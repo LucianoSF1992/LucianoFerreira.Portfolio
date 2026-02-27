@@ -1,0 +1,32 @@
+@page
+@{
+    ViewData["Title"] = "Mensagem Enviada";
+}
+
+<section class="contact-hero text-white text-center d-flex align-items-center">
+    <div class="container">
+        <h1 class="section-title fw-bold">Mensagem enviada ✅</h1>
+        <p class="lead mt-3">
+            Obrigado pelo contato! Em breve retornarei.
+        </p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container text-center">
+
+        <div class="contact-card p-4 mx-auto" style="max-width: 520px;">
+            <h4 class="fw-bold mb-3">Tudo certo!</h4>
+
+            <p class="text-muted mb-4">
+                Sua mensagem foi enviada com sucesso.
+                Fique à vontade para explorar meus projetos enquanto isso.
+            </p>
+
+            <a asp-page="/Index" class="btn btn-dark">
+                ← Voltar para Home
+            </a>
+        </div>
+
+    </div>
+</section>
