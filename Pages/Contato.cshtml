@@ -6,7 +6,7 @@
 
 <section class="contact-hero text-white text-center d-flex align-items-center">
     <div class="container">
-        <h1 class="display-4 fw-bold">Contato</h1>
+        <h1 class="section-title fw-bold">Contato</h1>
         <p class="lead mt-3">
             Vamos conversar sobre oportunidades e projetos.
         </p>
@@ -26,7 +26,7 @@
 
         <div asp-validation-summary="All" class="text-danger"></div>
 
-        <form method="post" class="contact-card p-4">
+        <form method="post" class="contact-card p-4 mx-auto contact-form">
 
             <div class="mb-3">
                 <label asp-for="Contato.Nome" class="form-label"></label>
@@ -46,7 +46,7 @@
                 <span asp-validation-for="Contato.Mensagem" class="text-danger"></span>
             </div>
 
-            <button type="submit" class="btn btn-dark">
+            <button type="submit" class="btn btn-dark w-100">
                 Enviar Mensagem
             </button>
 
