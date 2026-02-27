@@ -87,7 +87,7 @@ body {
 .projects-hero,
 .about-hero,
 .contact-hero {
-  min-height: 40vh;
+  min-height: 32vh;
   padding: 3rem 0;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 .about-hero {
-  background: linear-gradient(135deg, #232526, #414345);
+  background: linear-gradient(135deg, #2b2f36, #3f4650);
 }
 
 .contact-hero {
@@ -150,6 +150,14 @@ body {
   transform: scale(1.05);
 }
 
+.about-hero .lead,
+.projects-hero .lead,
+.contact-hero .lead {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ====== MOBILE ====== */
 @media (max-width: 768px) {
 
@@ -179,6 +187,10 @@ body {
   .about-hero img {
     width: 150px;
     height: 150px;
+  }
+
+  .about-card {
+    margin-top: 1.5rem;
   }
 }
 
