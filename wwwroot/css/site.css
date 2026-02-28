@@ -1,3 +1,14 @@
+/* =========================
+   GLOBAL
+========================= */
+:root {
+  --nav-h: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -10,22 +21,30 @@ body {
   overflow-x: hidden;
 }
 
-/* o padding da navbar deve ser aplicado no MAIN (main-content), não no body */
+/* IMPORTANTE:
+   Não use padding-top aqui (evita faixa branca).
+   O espaçamento da navbar está resolvido nas seções hero.
+*/
 .main-content {
-  padding-top: 72px;
-  /* altura da navbar fixed-top */
+  padding-top: 0;
 }
 
 /* garante altura consistente da navbar */
 #mainNavbar {
-  min-height: 72px;
+  min-height: var(--nav-h);
+  z-index: 1030;
 }
 
-/* ====== NAVBAR ====== */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
   transition: background-color 0.3s ease;
   padding-top: 0;
   padding-bottom: 0;
+
+  /* visual premium */
+  backdrop-filter: blur(10px);
 }
 
 /* botão hamburguer mais fácil de tocar */
@@ -41,7 +60,7 @@ body {
 
 /* Quando rolar a página */
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.92);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -64,16 +83,20 @@ body {
   outline-offset: 2px;
 }
 
-/* ====== HERO HOME ====== */
+/* =========================
+   HERO HOME
+========================= */
 .hero {
-  min-height: calc(100vh - 72px);
   background: linear-gradient(135deg, #1e3c72, #2a5298);
   padding: 4rem 0;
+  padding-top: calc(4rem + var(--nav-h));
+  min-height: 100vh;
 }
 
 .hero-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.1;
+  letter-spacing: -0.5px;
 }
 
 .hero-subtitle {
@@ -84,23 +107,17 @@ body {
   min-width: 180px;
 }
 
-/* ====== HERO SEÇÕES (Sobre / Projetos / Contato) ======
-   Correção do "espaço branco": remove qualquer margem superior,
-   e elimina aquele filete/branco de 1px em alguns navegadores.
-*/
+/* =========================
+   HERO SEÇÕES (Sobre / Projetos / Contato)
+========================= */
 .projects-hero,
 .about-hero,
 .contact-hero {
   min-height: 32vh;
   padding: 3rem 0;
-  margin-top: 0;
-}
-
-/* elimina linha branca fina (subpixel rendering) */
-.about-hero,
-.projects-hero,
-.contact-hero {
-  margin-top: -1px;
+  padding-top: calc(3rem + var(--nav-h));
+  padding-bottom: 4rem;
+  /* mais respiro no desktop */
 }
 
 .projects-hero {
@@ -108,7 +125,8 @@ body {
 }
 
 .about-hero {
-  background: linear-gradient(135deg, #2b2f36, #3f4650);
+  /* gradiente mais moderno */
+  background: linear-gradient(135deg, #2b2f36 0%, #3f4650 50%, #4b5563 100%);
 }
 
 .contact-hero {
@@ -124,7 +142,9 @@ body {
   margin-right: auto;
 }
 
-/* ====== CARDS ====== */
+/* =========================
+   CARDS
+========================= */
 .stack {
   background-color: #f8f9fa;
 }
@@ -132,11 +152,12 @@ body {
 .tech-card {
   background-color: white;
   border-radius: 10px;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tech-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
 .project-card,
@@ -145,51 +166,75 @@ body {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  /* melhora contraste */
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.project-card:hover,
+.about-card:hover,
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* ====== FOOTER ====== */
+/* melhora legibilidade das listas */
+.about-card li {
+  margin-bottom: 6px;
+}
+
+/* dá mais respiro no card do Sobre */
+.about-card {
+  margin-top: 2rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
 .site-footer {
   background: #0b2a5b;
-  /* azul escuro */
 }
 
-/* ====== FOTO SOBRE ====== */
+/* =========================
+   FOTO SOBRE
+========================= */
 .about-hero img {
   border: 4px solid rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease;
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
+
+  /* sombra premium */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .about-hero img:hover {
   transform: scale(1.05);
 }
 
-/* ====== UTILITÁRIOS ====== */
-
-/* títulos fluidos nas páginas (Projetos/Contato/Sobre etc) */
+/* =========================
+   UTILITÁRIOS
+========================= */
 .section-title {
   font-size: clamp(1.8rem, 4.5vw, 2.6rem);
   line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-/* botões de cards (Projetos) */
 .project-btn {
   width: auto;
 }
 
-/* formulário contato com largura confortável no desktop */
 .contact-form {
   max-width: 720px;
 }
 
-/* ====== MOBILE ====== */
+/* =========================
+   MOBILE
+========================= */
 @media (max-width: 768px) {
   .navbar .nav-link {
     margin-left: 0;
@@ -203,6 +248,7 @@ body {
 
   .hero {
     padding: 3rem 0;
+    padding-top: calc(3rem + var(--nav-h));
     min-height: auto;
   }
 
@@ -211,12 +257,14 @@ body {
   .contact-hero {
     min-height: auto;
     padding: 3rem 0;
+    padding-top: calc(2.5rem + var(--nav-h));
     text-align: center;
+    padding-bottom: 3rem;
   }
 
   .about-hero img {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
   }
 
   .about-card {
@@ -228,6 +276,7 @@ body {
 @media (max-width: 576px) {
   .hero {
     padding: 2.5rem 0;
+    padding-top: calc(2.5rem + var(--nav-h));
   }
 
   .hero .btn {
@@ -238,7 +287,6 @@ body {
   .project-card,
   .contact-card {
     padding: 1.25rem !important;
-    /* dá um respiro sem ficar gigante */
   }
 
   .project-btn {
