@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
 }
 
+/* o padding da navbar deve ser aplicado no MAIN (main-content), não no body */
 .main-content {
   padding-top: 72px;
   /* altura da navbar fixed-top */
@@ -29,7 +30,7 @@ body {
 
 /* botão hamburguer mais fácil de tocar */
 .navbar-toggler {
-  padding: .5rem .65rem;
+  padding: 0.5rem 0.65rem;
 }
 
 /* Espaçamento dos links no desktop */
@@ -59,7 +60,7 @@ body {
 
 /* acessibilidade foco teclado */
 .navbar-nav .nav-link:focus {
-  outline: 2px solid rgba(255, 255, 255, .35);
+  outline: 2px solid rgba(255, 255, 255, 0.35);
   outline-offset: 2px;
 }
 
@@ -83,12 +84,23 @@ body {
   min-width: 180px;
 }
 
-/* ====== HERO SEÇÕES (Sobre / Projetos / Contato) ====== */
+/* ====== HERO SEÇÕES (Sobre / Projetos / Contato) ======
+   Correção do "espaço branco": remove qualquer margem superior,
+   e elimina aquele filete/branco de 1px em alguns navegadores.
+*/
 .projects-hero,
 .about-hero,
 .contact-hero {
   min-height: 32vh;
   padding: 3rem 0;
+  margin-top: 0;
+}
+
+/* elimina linha branca fina (subpixel rendering) */
+.about-hero,
+.projects-hero,
+.contact-hero {
+  margin-top: -1px;
 }
 
 .projects-hero {
@@ -101,6 +113,15 @@ body {
 
 .contact-hero {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* limita largura do texto do hero para melhor leitura */
+.about-hero .lead,
+.projects-hero .lead,
+.contact-hero .lead {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ====== CARDS ====== */
@@ -150,17 +171,26 @@ body {
   transform: scale(1.05);
 }
 
-.about-hero .lead,
-.projects-hero .lead,
-.contact-hero .lead {
+/* ====== UTILITÁRIOS ====== */
+
+/* títulos fluidos nas páginas (Projetos/Contato/Sobre etc) */
+.section-title {
+  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+  line-height: 1.15;
+}
+
+/* botões de cards (Projetos) */
+.project-btn {
+  width: auto;
+}
+
+/* formulário contato com largura confortável no desktop */
+.contact-form {
   max-width: 720px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* ====== MOBILE ====== */
 @media (max-width: 768px) {
-
   .navbar .nav-link {
     margin-left: 0;
     padding: 0.75rem 0.75rem;
@@ -203,27 +233,8 @@ body {
   .hero .btn {
     width: 100%;
   }
-}
 
-/* títulos fluidos nas páginas (Projetos/Contato/Sobre etc) */
-.section-title {
-  font-size: clamp(1.8rem, 4.5vw, 2.6rem);
-  line-height: 1.15;
-}
-
-/* botões de cards (Projetos) */
-.project-btn {
-  width: auto;
-}
-
-/* formulário contato com largura confortável no desktop */
-.contact-form {
-  max-width: 720px;
-}
-
-/* melhorar legibilidade dos cards no celular */
-@media (max-width: 576px) {
-
+  /* melhorar legibilidade dos cards no celular */
   .project-card,
   .contact-card {
     padding: 1.25rem !important;
