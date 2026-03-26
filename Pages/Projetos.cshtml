@@ -6,8 +6,8 @@
 
 <section class="projects-hero text-white text-center d-flex align-items-center">
     <div class="container">
-        <h1 class="section-title fw-bold">Projetos</h1>
-        <p class="lead mt-3">
+        <h1 class="section-title fw-bold" data-i18n="projects_hero_title">Projetos</h1>
+        <p class="lead mt-3" data-i18n="projects_hero_subtitle">
             Aplicações desenvolvidas com foco em organização, escalabilidade e boas práticas.
         </p>
     </div>
@@ -16,21 +16,23 @@
 <section class="py-5">
     <div class="container">
 
-        <h3 class="fw-bold mb-4">🚀 Projetos Principais</h3>
+        <h3 class="fw-bold mb-4" data-i18n="projects_main_title">🚀 Projetos Principais</h3>
 
         <div class="row g-4">
 
             <div class="col-md-6">
                 <div class="project-card p-4 h-100">
 
-                    <h5 class="fw-bold">TreineMais — Sistema de Treinos para Academias</h5>
+                    <h5 class="fw-bold" data-i18n="project_treinemais_title">
+                        TreineMais — Sistema de Treinos para Academias
+                    </h5>
 
-                    <span class="badge bg-success mb-3">MVP concluído</span>
+                    <span class="badge bg-success mb-3" data-i18n="project_status_done">MVP concluído</span>
 
-                    <p>
-                        Sistema web para academias e personal trainers criarem treinos
-                        personalizados, gerenciarem alunos e acompanharem evolução dos exercícios.
-                        Possui autenticação com ASP.NET Identity e controle de acesso por perfil.
+                    <p data-i18n="project_treinemais_desc">
+                        Sistema web para academias e personal trainers criarem treinos personalizados, gerenciarem
+                        alunos e acompanharem a evolução dos exercícios. Possui autenticação com ASP.NET Identity e
+                        controle de acesso por perfil.
                     </p>
 
                     <p class="small text-muted">
@@ -40,12 +42,12 @@
                     <div class="d-flex gap-2 flex-wrap mt-3">
 
                         <a href="https://treinemais.lucianoferreiradev.com" target="_blank"
-                               class="btn btn-primary btn-sm">
+                               class="btn btn-primary btn-sm" data-i18n="project_btn_system">
                             Ver Sistema
                         </a>
 
                         <a href="https://github.com/LucianoSF1992/TreineMais" target="_blank"
-                               class="btn btn-outline-dark btn-sm">
+                               class="btn btn-outline-dark btn-sm" data-i18n="project_btn_github">
                             GitHub
                         </a>
 
@@ -56,18 +58,20 @@
 
             <div class="col-md-6">
                 <div class="project-card p-4 h-100">
-                    <h5 class="fw-bold">AgendaPro – Sistema de Gestão de Agendamentos</h5>
+                    <h5 class="fw-bold" data-i18n="project_agendapro_title">
+                        AgendaPro – Sistema de Gestão de Agendamentos
+                    </h5>
 
-                    <span class="badge bg-success mb-3">MVP concluído</span>
+                    <span class="badge bg-success mb-3" data-i18n="project_status_done">MVP concluído</span>
 
-                    <p>
+                    <p data-i18n="project_agendapro_desc_1">
                         Sistema web para gerenciamento de agendamentos de serviços, com controle de clientes,
                         profissionais, serviços, horários e status de atendimento.
                     </p>
 
-                    <p>
-                        Possui autenticação com perfis de acesso, dashboard com indicadores do dia,
-                        controle de conflito de horários e relatórios gerenciais por período.
+                    <p data-i18n="project_agendapro_desc_2">
+                        Possui autenticação com perfis de acesso, dashboard com indicadores do dia, controle de conflito
+                        de horários e relatórios gerenciais por período.
                     </p>
 
                     <p class="small text-muted">
@@ -77,12 +81,12 @@
                     <div class="d-flex gap-2 flex-wrap mt-3">
 
                         <a href="https://agendapro.lucianoferreiradev.com" target="_blank"
-                               class="btn btn-primary btn-sm">
+                               class="btn btn-primary btn-sm" data-i18n="project_btn_system">
                             Ver Sistema
                         </a>
 
                         <a href="https://github.com/LucianoSF1992/AgendaPro" target="_blank"
-                               class="btn btn-outline-dark btn-sm">
+                               class="btn btn-outline-dark btn-sm" data-i18n="project_btn_github">
                             GitHub
                         </a>
                     </div>
@@ -91,38 +95,42 @@
 
             <div class="col-md-6">
                 <div class="project-card p-4 h-100">
-                    <h5 class="fw-bold">Sistema de Controle de Estoque de Restaurantes</h5>
+                    <h5 class="fw-bold" data-i18n="project_erp_title">
+                        Sistema de Controle de Estoque de Restaurantes
+                    </h5>
 
-                    <span class="badge bg-warning text-dark mb-3">Em andamento</span>
+                    <span class="badge bg-warning text-dark mb-3" data-i18n="project_status_progress">Em
+                        andamento</span>
 
-                    <p>
-                        Sistema web para controlar o estoque de restaurantes.
-                    </p>
+                        <p data-i18n="project_erp_desc">
+                            Sistema web para controle de estoque de restaurantes, com foco em organização de produtos,
+                            movimentações e gestão operacional.
+                        </p>
 
-                    <p class="small text-muted">
-                        C# • ASP.NET Core • SQL Server
-                    </p>
+                        <p class="small text-muted">
+                            C# • ASP.NET Core • SQL Server
+                        </p>
+                    </div>
                 </div>
+
+            </div>
+
+            <hr class="my-5" />
+
+            <h3 class="fw-bold mb-4" data-i18n="projects_other_title">💻 Outros Projetos</h3>
+
+            <div class="project-card p-4">
+                <h5 class="fw-bold" data-i18n="projects_github_title">Repositórios no GitHub</h5>
+                <p data-i18n="projects_github_desc">
+                    Aplicações web, APIs REST e projetos práticos desenvolvidos com foco em aprendizado contínuo e boas
+                    práticas.
+                </p>
+
+                <a href="https://github.com/LucianoSF1992" target="_blank" rel="noopener"
+                       class="btn btn-dark btn-sm project-btn" data-i18n="projects_github_button">
+                    Ver no GitHub
+                </a>
             </div>
 
         </div>
-
-        <hr class="my-5" />
-
-        <h3 class="fw-bold mb-4">💻 Outros Projetos</h3>
-
-        <div class="project-card p-4">
-            <h5 class="fw-bold">Repositórios no GitHub</h5>
-            <p>
-                Aplicações web, APIs REST e projetos práticos desenvolvidos
-                com foco em aprendizado contínuo e boas práticas.
-            </p>
-
-            <a href="https://github.com/LucianoSF1992" target="_blank" rel="noopener"
-                   class="btn btn-dark btn-sm project-btn">
-                Ver no GitHub
-            </a>
-        </div>
-
-    </div>
-</section>
+    </section>

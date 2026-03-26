@@ -54,7 +54,33 @@ const translations = {
         about_skills_title: "Principais Competências",
         about_skills_base: "Base principal",
         about_skills_front: "Frontend e fundamentos",
-        about_skills_extra: "Conhecimentos adicionais"
+        about_skills_extra: "Conhecimentos adicionais",
+
+        // PROJETOS
+        projects_hero_title: "Projetos",
+        projects_hero_subtitle: "Aplicações desenvolvidas com foco em organização, escalabilidade e boas práticas.",
+        projects_main_title: "🚀 Projetos Principais",
+        projects_other_title: "💻 Outros Projetos",
+
+        project_status_done: "MVP concluído",
+        project_status_progress: "Em andamento",
+
+        project_treinemais_title: "TreineMais — Sistema de Treinos para Academias",
+        project_treinemais_desc: "Sistema web para academias e personal trainers criarem treinos personalizados, gerenciarem alunos e acompanharem a evolução dos exercícios. Possui autenticação com ASP.NET Identity e controle de acesso por perfil.",
+
+        project_agendapro_title: "AgendaPro – Sistema de Gestão de Agendamentos",
+        project_agendapro_desc_1: "Sistema web para gerenciamento de agendamentos de serviços, com controle de clientes, profissionais, serviços, horários e status de atendimento.",
+        project_agendapro_desc_2: "Possui autenticação com perfis de acesso, dashboard com indicadores do dia, controle de conflito de horários e relatórios gerenciais por período.",
+
+        project_erp_title: "Sistema de Controle de Estoque de Restaurantes",
+        project_erp_desc: "Sistema web para controle de estoque de restaurantes, com foco em organização de produtos, movimentações e gestão operacional.",
+
+        project_btn_system: "Ver Sistema",
+        project_btn_github: "GitHub",
+
+        projects_github_title: "Repositórios no GitHub",
+        projects_github_desc: "Aplicações web, APIs REST e projetos práticos desenvolvidos com foco em aprendizado contínuo e boas práticas.",
+        projects_github_button: "Ver no GitHub"
     },
 
     en: {
@@ -100,7 +126,33 @@ const translations = {
         about_skills_title: "Key Skills",
         about_skills_base: "Core stack",
         about_skills_front: "Frontend and fundamentals",
-        about_skills_extra: "Additional knowledge"
+        about_skills_extra: "Additional knowledge",
+
+        // PROJECTS
+        projects_hero_title: "Projects",
+        projects_hero_subtitle: "Applications developed with a focus on organization, scalability, and best practices.",
+        projects_main_title: "🚀 Main Projects",
+        projects_other_title: "💻 Other Projects",
+
+        project_status_done: "MVP completed",
+        project_status_progress: "In progress",
+
+        project_treinemais_title: "TreineMais — Training Management System for Gyms",
+        project_treinemais_desc: "Web system for gyms and personal trainers to create personalized workout plans, manage students, and track exercise progress. Includes authentication with ASP.NET Identity and role-based access control.",
+
+        project_agendapro_title: "AgendaPro – Scheduling Management System",
+        project_agendapro_desc_1: "Web system for service appointment management, including control of clients, professionals, services, time slots, and appointment status.",
+        project_agendapro_desc_2: "Includes authentication with access roles, dashboard with daily indicators, scheduling conflict control, and management reports by period.",
+
+        project_erp_title: "Restaurant Inventory Control System",
+        project_erp_desc: "Web system for restaurant inventory control, focused on product organization, stock movements, and operational management.",
+
+        project_btn_system: "View System",
+        project_btn_github: "GitHub",
+
+        projects_github_title: "GitHub Repositories",
+        projects_github_desc: "Web applications, REST APIs, and practical projects developed with a focus on continuous learning and best practices.",
+        projects_github_button: "View on GitHub"
     },
 
     es: {
@@ -146,7 +198,33 @@ const translations = {
         about_skills_title: "Principales habilidades",
         about_skills_base: "Base principal",
         about_skills_front: "Frontend y fundamentos",
-        about_skills_extra: "Conocimientos adicionales"
+        about_skills_extra: "Conocimientos adicionales",
+
+        // PROYECTOS
+        projects_hero_title: "Proyectos",
+        projects_hero_subtitle: "Aplicaciones desarrolladas con enfoque en organización, escalabilidad y buenas prácticas.",
+        projects_main_title: "🚀 Proyectos Principales",
+        projects_other_title: "💻 Otros Proyectos",
+
+        project_status_done: "MVP finalizado",
+        project_status_progress: "En desarrollo",
+
+        project_treinemais_title: "TreineMais — Sistema de Entrenamientos para Gimnasios",
+        project_treinemais_desc: "Sistema web para gimnasios y entrenadores personales que permite crear entrenamientos personalizados, gestionar alumnos y acompañar la evolución de los ejercicios. Incluye autenticación con ASP.NET Identity y control de acceso por perfil.",
+
+        project_agendapro_title: "AgendaPro – Sistema de Gestión de Citas",
+        project_agendapro_desc_1: "Sistema web para la gestión de citas de servicios, con control de clientes, profesionales, servicios, horarios y estado de atención.",
+        project_agendapro_desc_2: "Incluye autenticación con perfiles de acceso, panel con indicadores del día, control de conflictos de horario e informes gerenciales por período.",
+
+        project_erp_title: "Sistema de Control de Inventario para Restaurantes",
+        project_erp_desc: "Sistema web para el control de inventario de restaurantes, enfocado en la organización de productos, movimientos de stock y gestión operativa.",
+
+        project_btn_system: "Ver Sistema",
+        project_btn_github: "GitHub",
+
+        projects_github_title: "Repositorios en GitHub",
+        projects_github_desc: "Aplicaciones web, APIs REST y proyectos prácticos desarrollados con enfoque en aprendizaje continuo y buenas prácticas.",
+        projects_github_button: "Ver en GitHub"
     }
 };
 
