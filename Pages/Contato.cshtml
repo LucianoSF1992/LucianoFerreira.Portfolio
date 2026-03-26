@@ -6,8 +6,8 @@
 
 <section class="contact-hero text-white text-center d-flex align-items-center">
     <div class="container">
-        <h1 class="section-title fw-bold">Contato</h1>
-        <p class="lead mt-3">
+        <h1 class="section-title fw-bold" data-i18n="contact_hero_title">Contato</h1>
+        <p class="lead mt-3" data-i18n="contact_hero_subtitle">
             Vamos conversar sobre oportunidades e projetos.
         </p>
     </div>
@@ -30,26 +30,29 @@
               class="contact-card p-4 mx-auto contact-form">
 
             <div class="mb-3">
-                <label class="form-label">Nome</label>
-                <input name="name" class="form-control" required />
+                <label class="form-label" data-i18n="contact_label_name">Nome</label>
+                <input name="name" class="form-control" required data-i18n-placeholder="contact_placeholder_name"
+                       placeholder="Seu nome" />
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Email</label>
-                <input name="email" type="email" class="form-control" required />
+                <label class="form-label" data-i18n="contact_label_email">Email</label>
+                <input name="email" type="email" class="form-control" required
+                       data-i18n-placeholder="contact_placeholder_email" placeholder="Seu melhor email" />
             </div>
 
             <div class="mb-3">
-                <label class="form-label">Mensagem</label>
-                <textarea name="message" class="form-control" rows="4" required></textarea>
+                <label class="form-label" data-i18n="contact_label_message">Mensagem</label>
+                <textarea name="message" class="form-control" rows="4" required
+                          data-i18n-placeholder="contact_placeholder_message" placeholder="Digite sua mensagem"></textarea>
             </div>
 
-            <!-- opcional: assunto do email -->
-            <input type="hidden" name="_subject" value="Novo contato do portfólio" />
+            <input type="hidden" name="_subject" value="Novo contato do portfólio"
+                   data-i18n-subject="contact_email_subject" />
 
             <div id="formAlert" class="alert d-none mt-3" role="alert"></div>
 
-            <button type="submit" class="btn btn-dark w-100">
+            <button type="submit" class="btn btn-dark w-100" data-i18n="contact_btn_submit">
                 Enviar Mensagem
             </button>
 
@@ -64,6 +67,15 @@
         const alertBox = document.getElementById("formAlert");
         const successUrl = "https://www.lucianoferreiradev.com/ContatoSucesso";
 
+        function getCurrentLanguage() {
+            return localStorage.getItem("preferredLanguage") || "pt";
+        }
+
+        function getTranslation(key) {
+            const lang = getCurrentLanguage();
+            return window.translations?.[lang]?.[key] || window.translations?.pt?.[key] || key;
+        }
+
         function showAlert(message, type) {
             if (!alertBox) return;
             alertBox.classList.remove("d-none", "alert-success", "alert-danger");
@@ -71,15 +83,17 @@
             alertBox.textContent = message;
         }
 
+        if (!form) return;
+
         form.addEventListener("submit", async function (e) {
             e.preventDefault();
 
-            // feedback visual (opcional)
             const submitBtn = form.querySelector('button[type="submit"]');
             const oldText = submitBtn ? submitBtn.textContent : null;
+
             if (submitBtn) {
                 submitBtn.disabled = true;
-                submitBtn.textContent = "Enviando...";
+                submitBtn.textContent = getTranslation("contact_btn_sending");
             }
 
             try {
@@ -94,26 +108,24 @@
                 });
 
                 if (response.ok) {
-                    // redireciona para sua página personalizada
                     window.location.href = successUrl;
                     return;
                 }
 
-                // tenta ler mensagem de erro do Formspree
                 let data = null;
                 try { data = await response.json(); } catch { }
 
                 const msg = (data && data.errors && data.errors[0] && data.errors[0].message)
                     ? data.errors[0].message
-                    : "Não foi possível enviar sua mensagem. Tente novamente.";
+                    : getTranslation("contact_error_default");
 
                 showAlert(msg, "error");
             } catch (err) {
-                showAlert("Falha de conexão ao enviar. Tente novamente.", "error");
+                showAlert(getTranslation("contact_error_connection"), "error");
             } finally {
                 if (submitBtn) {
                     submitBtn.disabled = false;
-                    submitBtn.textContent = oldText || "Enviar Mensagem";
+                    submitBtn.textContent = oldText || getTranslation("contact_btn_submit");
                 }
             }
         });

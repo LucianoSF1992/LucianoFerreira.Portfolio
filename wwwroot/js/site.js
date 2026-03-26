@@ -10,7 +10,7 @@
     }
 });
 
-const translations = {
+window.translations = {
     pt: {
         // NAVBAR + FOOTER
         menu_home: "Home",
@@ -46,9 +46,7 @@ const translations = {
         about_role: "Desenvolvedor Full Stack (foco em .NET)",
 
         about_text_1: "Desenvolvedor Full Stack com experiência em aplicações web e APIs, atuando do design de endpoints e regras de negócio até a construção de interfaces responsivas. Forte base em .NET (C#, ASP.NET Core), com facilidade para adaptar e trabalhar com diferentes stacks conforme o projeto.",
-
         about_text_2: "Trabalho com APIs REST, autenticação/autorização, modelagem de banco de dados, boas práticas de arquitetura, organização de código e versionamento com Git.",
-
         about_text_3: "Busco oportunidades como Desenvolvedor Full Stack onde eu possa contribuir com soluções escaláveis, código bem estruturado e evolução contínua — em .NET ou outras stacks, conforme a necessidade do time.",
 
         about_skills_title: "Principais Competências",
@@ -80,7 +78,27 @@ const translations = {
 
         projects_github_title: "Repositórios no GitHub",
         projects_github_desc: "Aplicações web, APIs REST e projetos práticos desenvolvidos com foco em aprendizado contínuo e boas práticas.",
-        projects_github_button: "Ver no GitHub"
+        projects_github_button: "Ver no GitHub",
+
+        // CONTATO
+        contact_hero_title: "Contato",
+        contact_hero_subtitle: "Vamos conversar sobre oportunidades e projetos.",
+
+        contact_label_name: "Nome",
+        contact_label_email: "Email",
+        contact_label_message: "Mensagem",
+
+        contact_placeholder_name: "Seu nome",
+        contact_placeholder_email: "Seu melhor email",
+        contact_placeholder_message: "Digite sua mensagem",
+
+        contact_email_subject: "Novo contato do portfólio",
+
+        contact_btn_submit: "Enviar Mensagem",
+        contact_btn_sending: "Enviando...",
+
+        contact_error_default: "Não foi possível enviar sua mensagem. Tente novamente.",
+        contact_error_connection: "Falha de conexão ao enviar. Tente novamente."
     },
 
     en: {
@@ -118,9 +136,7 @@ const translations = {
         about_role: "Full Stack Developer (.NET focused)",
 
         about_text_1: "Full Stack Developer with experience in web applications and APIs, working from endpoint design and business rules to building responsive interfaces. Strong foundation in .NET (C#, ASP.NET Core), with the ability to adapt and work with different stacks depending on the project.",
-
         about_text_2: "I work with REST APIs, authentication/authorization, database modeling, architecture best practices, code organization, and version control using Git.",
-
         about_text_3: "I am looking for opportunities as a Full Stack Developer where I can contribute with scalable solutions, well-structured code, and continuous improvement — in .NET or other stacks depending on the team’s needs.",
 
         about_skills_title: "Key Skills",
@@ -152,7 +168,27 @@ const translations = {
 
         projects_github_title: "GitHub Repositories",
         projects_github_desc: "Web applications, REST APIs, and practical projects developed with a focus on continuous learning and best practices.",
-        projects_github_button: "View on GitHub"
+        projects_github_button: "View on GitHub",
+
+        // CONTACT
+        contact_hero_title: "Contact",
+        contact_hero_subtitle: "Let's talk about opportunities and projects.",
+
+        contact_label_name: "Name",
+        contact_label_email: "Email",
+        contact_label_message: "Message",
+
+        contact_placeholder_name: "Your name",
+        contact_placeholder_email: "Your best email",
+        contact_placeholder_message: "Type your message",
+
+        contact_email_subject: "New portfolio contact",
+
+        contact_btn_submit: "Send Message",
+        contact_btn_sending: "Sending...",
+
+        contact_error_default: "Your message could not be sent. Please try again.",
+        contact_error_connection: "Connection failed while sending. Please try again."
     },
 
     es: {
@@ -190,9 +226,7 @@ const translations = {
         about_role: "Desarrollador Full Stack (enfocado en .NET)",
 
         about_text_1: "Desarrollador Full Stack con experiencia en aplicaciones web y APIs, trabajando desde el diseño de endpoints y reglas de negocio hasta la construcción de interfaces responsivas. Fuerte base en .NET (C#, ASP.NET Core), con facilidad para adaptarse y trabajar con diferentes stacks según el proyecto.",
-
         about_text_2: "Trabajo con APIs REST, autenticación/autorización, modelado de bases de datos, buenas prácticas de arquitectura, organización de código y control de versiones con Git.",
-
         about_text_3: "Busco oportunidades como Desarrollador Full Stack donde pueda contribuir con soluciones escalables, código bien estructurado y evolución continua — en .NET u otras tecnologías según las necesidades del equipo.",
 
         about_skills_title: "Principales habilidades",
@@ -224,19 +258,58 @@ const translations = {
 
         projects_github_title: "Repositorios en GitHub",
         projects_github_desc: "Aplicaciones web, APIs REST y proyectos prácticos desarrollados con enfoque en aprendizaje continuo y buenas prácticas.",
-        projects_github_button: "Ver en GitHub"
+        projects_github_button: "Ver en GitHub",
+
+        // CONTACTO
+        contact_hero_title: "Contacto",
+        contact_hero_subtitle: "Hablemos sobre oportunidades y proyectos.",
+
+        contact_label_name: "Nombre",
+        contact_label_email: "Correo electrónico",
+        contact_label_message: "Mensaje",
+
+        contact_placeholder_name: "Tu nombre",
+        contact_placeholder_email: "Tu mejor correo electrónico",
+        contact_placeholder_message: "Escribe tu mensaje",
+
+        contact_email_subject: "Nuevo contacto del portafolio",
+
+        contact_btn_submit: "Enviar Mensaje",
+        contact_btn_sending: "Enviando...",
+
+        contact_error_default: "No fue posible enviar tu mensaje. Inténtalo nuevamente.",
+        contact_error_connection: "Falló la conexión al enviar. Inténtalo nuevamente."
     }
 };
 
 function setLanguage(lang) {
     const elements = document.querySelectorAll("[data-i18n]");
-
     elements.forEach(element => {
         const key = element.getAttribute("data-i18n");
-        const translation = translations[lang]?.[key];
+        const translation = window.translations[lang]?.[key];
 
         if (translation) {
             element.textContent = translation;
+        }
+    });
+
+    const placeholderElements = document.querySelectorAll("[data-i18n-placeholder]");
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute("data-i18n-placeholder");
+        const translation = window.translations[lang]?.[key];
+
+        if (translation) {
+            element.setAttribute("placeholder", translation);
+        }
+    });
+
+    const subjectElements = document.querySelectorAll("[data-i18n-subject]");
+    subjectElements.forEach(element => {
+        const key = element.getAttribute("data-i18n-subject");
+        const translation = window.translations[lang]?.[key];
+
+        if (translation) {
+            element.value = translation;
         }
     });
 
