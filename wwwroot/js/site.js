@@ -160,8 +160,8 @@ window.translations = {
         project_agendapro_desc_1: "Web system for service appointment management, including control of clients, professionals, services, time slots, and appointment status.",
         project_agendapro_desc_2: "Includes authentication with access roles, dashboard with daily indicators, scheduling conflict control, and management reports by period.",
 
-        project_erp_title: "Restaurant Inventory Control System",
-        project_erp_desc: "Web system for restaurant inventory control, focused on product organization, stock movements, and operational management.",
+        project_erp_title: "Restaurant Inventory Management System",
+        project_erp_desc: "Web application for restaurant inventory and operations management, featuring product tracking, stock movements, and business workflows. Developed with ASP.NET Core, following layered architecture and best practices to ensure scalability and maintainability.",
 
         project_btn_system: "View System",
         project_btn_github: "GitHub",
@@ -250,8 +250,8 @@ window.translations = {
         project_agendapro_desc_1: "Sistema web para la gestión de citas de servicios, con control de clientes, profesionales, servicios, horarios y estado de atención.",
         project_agendapro_desc_2: "Incluye autenticación con perfiles de acceso, panel con indicadores del día, control de conflictos de horario e informes gerenciales por período.",
 
-        project_erp_title: "Sistema de Control de Inventario para Restaurantes",
-        project_erp_desc: "Sistema web para el control de inventario de restaurantes, enfocado en la organización de productos, movimientos de stock y gestión operativa.",
+        project_erp_title: "Sistema de Gestión de Inventario para Restaurantes",
+        project_erp_desc: "Sistema web para la gestión de inventario y operaciones de restaurantes, incluyendo control de productos, movimientos de stock y procesos operativos. Desarrollado con ASP.NET Core, aplicando arquitectura en capas y buenas prácticas para escalabilidad y mantenimiento.",
 
         project_btn_system: "Ver Sistema",
         project_btn_github: "GitHub",
