@@ -56,8 +56,8 @@ window.translations = {
 
         // PROJETOS
         projects_hero_title: "Projetos",
-        projects_hero_subtitle: "Aplicações desenvolvidas com foco em organização, escalabilidade e boas práticas.",
-        projects_main_title: "🚀 Projetos Principais",
+        projects_hero_subtitle: "Aplicações Full Stack desenvolvidas para resolver problemas reais, utilizando tecnologias modernas, arquitetura escalável e boas práticas de desenvolvimento.",
+        projects_main_title: "🚀 Projetos em Destaque",
         projects_other_title: "💻 Outros Projetos",
 
         project_status_done: "MVP concluído",
@@ -70,8 +70,20 @@ window.translations = {
         project_agendapro_desc_1: "Sistema web para gerenciamento de agendamentos de serviços, com controle de clientes, profissionais, serviços, horários e status de atendimento.",
         project_agendapro_desc_2: "Possui autenticação com perfis de acesso, dashboard com indicadores do dia, controle de conflito de horários e relatórios gerenciais por período.",
 
-        project_erp_title: "Sistema de Controle de Estoque de Restaurantes",
-        project_erp_desc: "Sistema web para controle de estoque de restaurantes, com foco em organização de produtos, movimentações e gestão operacional.",
+        project_erp_title: "StockChef Platform — Sistema de Gestão para Restaurantes",
+        project_erp_desc: "Plataforma Full Stack para gerenciamento de estoque de restaurantes, desenvolvida com Angular, ASP.NET Core, APIs REST e Clean Architecture, com foco em escalabilidade e organização do código.",
+
+
+        project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Ensino",
+        project_devclub_status: "Publicado",
+        project_devclub_desc_1: "Plataforma Full Stack desenvolvida para o concurso de Desenvolvedor Full Stack da DevClub. Possui autenticação de usuários, área do aluno, catálogo de cursos, páginas institucionais, formulário de contato integrado com API REST e interface totalmente responsiva.",
+        project_devclub_desc_2: "Desenvolvido com Next.js no frontend e ASP.NET Core no backend, utilizando Entity Framework Core, SQLite e deploy em Linux com Nginx, PM2 e Systemd",
+
+
+        project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Enseñanza",
+        project_devclub_status: "Publicado",
+        project_devclub_desc_1: "Plataforma Full Stack desarrollada para el concurso DevClub con autenticación, área del alumno, catálogo de cursos, API de contacto e interfaz responsiva.",
+        project_devclub_desc_2: "Desarrollada con Next.js en el frontend y ASP.NET Core en el backend utilizando Entity Framework Core, SQLite y desplegada en Linux con Nginx, PM2 y Systemd.",
 
         project_btn_system: "Ver Sistema",
         project_btn_github: "GitHub",
@@ -146,8 +158,8 @@ window.translations = {
 
         // PROJECTS
         projects_hero_title: "Projects",
-        projects_hero_subtitle: "Applications developed with a focus on organization, scalability, and best practices.",
-        projects_main_title: "🚀 Main Projects",
+        projects_hero_subtitle: "Full Stack applications built to solve real-world problems using modern technologies, scalable architecture and software engineering best practices.",
+        projects_main_title: "🚀 Featured Projects",
         projects_other_title: "💻 Other Projects",
 
         project_status_done: "MVP completed",
@@ -160,8 +172,14 @@ window.translations = {
         project_agendapro_desc_1: "Web system for service appointment management, including control of clients, professionals, services, time slots, and appointment status.",
         project_agendapro_desc_2: "Includes authentication with access roles, dashboard with daily indicators, scheduling conflict control, and management reports by period.",
 
-        project_erp_title: "Restaurant Inventory Management System",
-        project_erp_desc: "Web application for restaurant inventory and operations management, featuring product tracking, stock movements, and business workflows. Developed with ASP.NET Core, following layered architecture and best practices to ensure scalability and maintainability.",
+        project_erp_title: "StockChef Platform — Restaurant Management System",
+        project_erp_desc: "Full Stack restaurant management platform built with Angular, ASP.NET Core, REST APIs and Clean Architecture, focused on scalability, maintainability and clean code.",
+
+
+        project_devclub_title: "DevClub Next Level — Full Stack Learning Platform",
+        project_devclub_status: "Published",
+        project_devclub_desc_1: "Full Stack platform developed for the DevClub Full Stack Developer Contest with authentication, student area, course catalog, contact API and responsive interface.",
+        project_devclub_desc_2: "Built with Next.js on the frontend and ASP.NET Core on the backend using Entity Framework Core, SQLite and deployed on Linux with Nginx, PM2 and Systemd.",
 
         project_btn_system: "View System",
         project_btn_github: "GitHub",
@@ -236,8 +254,8 @@ window.translations = {
 
         // PROYECTOS
         projects_hero_title: "Proyectos",
-        projects_hero_subtitle: "Aplicaciones desarrolladas con enfoque en organización, escalabilidad y buenas prácticas.",
-        projects_main_title: "🚀 Proyectos Principales",
+        projects_hero_subtitle: "Aplicaciones Full Stack desarrolladas para resolver problemas reales utilizando tecnologías modernas, arquitectura escalable y buenas prácticas de desarrollo.",
+        projects_main_title: "🚀 Proyectos Destacados",
         projects_other_title: "💻 Otros Proyectos",
 
         project_status_done: "MVP finalizado",
@@ -250,8 +268,8 @@ window.translations = {
         project_agendapro_desc_1: "Sistema web para la gestión de citas de servicios, con control de clientes, profesionales, servicios, horarios y estado de atención.",
         project_agendapro_desc_2: "Incluye autenticación con perfiles de acceso, panel con indicadores del día, control de conflictos de horario e informes gerenciales por período.",
 
-        project_erp_title: "Sistema de Gestión de Inventario para Restaurantes",
-        project_erp_desc: "Sistema web para la gestión de inventario y operaciones de restaurantes, incluyendo control de productos, movimientos de stock y procesos operativos. Desarrollado con ASP.NET Core, aplicando arquitectura en capas y buenas prácticas para escalabilidad y mantenimiento.",
+        project_erp_title: "StockChef Platform — Sistema de Gestión para Restaurantes",
+        project_erp_desc: "Plataforma Full Stack para la gestión de restaurantes desarrollada con Angular, ASP.NET Core, APIs REST y Clean Architecture, enfocada en escalabilidad y mantenimiento.",
 
         project_btn_system: "Ver Sistema",
         project_btn_github: "GitHub",
