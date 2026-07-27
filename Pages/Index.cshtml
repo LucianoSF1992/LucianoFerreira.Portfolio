@@ -5,50 +5,80 @@
 }
 
 <section class="hero d-flex align-items-center text-center text-white">
+
     <div class="container">
 
-        <span class="badge bg-light text-dark px-3 py-2 mb-3">
-            Disponível para oportunidades • Desenvolvedor Full Stack
+        <span class="badge rounded-pill bg-light text-dark px-4 py-2 mb-4 shadow-sm fw-semibold"
+              data-i18n="home_hero_badge">
+            🚀 Disponível para oportunidades
         </span>
 
-        <h1 class="hero-title fw-bold" data-i18n="home_hero_name">
+        <h1 class="hero-title fw-bold display-4 mb-3" data-i18n="home_hero_name">
             Luciano Silva Ferreira
         </h1>
 
-        <span class="d-block hero-subtitle fw-normal mt-3 text-light" data-i18n="home_hero_subtitle">
+        <p class="hero-subtitle fs-4 text-light mb-3" data-i18n="home_hero_subtitle">
 
             Desenvolvedor Full Stack • .NET • Angular • React • Next.js
 
-        </span>
+        </p>
 
-        <p class="mt-4 hero-description" data-i18n="home_hero_description">
+        <div class="mb-4">
+
+            <span class="badge bg-primary me-2 mb-2">.NET</span>
+            <span class="badge bg-dark me-2 mb-2">C#</span>
+            <span class="badge bg-danger me-2 mb-2">Angular</span>
+            <span class="badge bg-info text-dark me-2 mb-2">React</span>
+            <span class="badge bg-secondary me-2 mb-2">Next.js</span>
+            <span class="badge bg-success mb-2">SQL Server</span>
+
+        </div>
+
+        <p class="hero-description lead mx-auto mb-5" style="max-width:850px;" data-i18n="home_hero_description">
 
             Desenvolvo aplicações web modernas utilizando ASP.NET Core,
             C#, Angular, React, Next.js e TypeScript,
             criando soluções completas do backend ao frontend,
-            com foco em performance, escalabilidade e arquitetura limpa.
+            com foco em arquitetura limpa, performance,
+            escalabilidade e boas práticas de desenvolvimento.
 
         </p>
 
-        <div class="mt-4 d-grid gap-2 d-sm-flex justify-content-center">
+        <div class="d-grid gap-2 d-sm-flex justify-content-center">
 
             <a class="btn btn-light btn-lg px-4" asp-page="/Projetos">
-                Ver Projetos
+
+                <i class="bi bi-folder2-open me-2"></i>
+
+                <span data-i18n="home_btn_projects">
+                    Ver Projetos
+                </span>
+
             </a>
 
             <a class="btn btn-primary btn-lg px-4" asp-page="/Contato">
-                Entrar em contato
+
+                <i class="bi bi-envelope me-2"></i>
+
+                <span data-i18n="home_btn_contact">
+                    Entrar em contato
+                </span>
+
             </a>
 
             <a class="btn btn-outline-light btn-lg px-4" href="https://github.com/LucianoSF1992" target="_blank"
-               rel="noopener">
+               rel="noopener" aria-label="GitHub">
+
+                <i class="bi bi-github me-2"></i>
 
                 GitHub
 
             </a>
 
             <a class="btn btn-outline-light btn-lg px-4" href="https://www.linkedin.com/in/lucianoferreira92/"
-               target="_blank" rel="noopener">
+               target="_blank" rel="noopener" aria-label="LinkedIn">
+
+                <i class="bi bi-linkedin me-2"></i>
 
                 LinkedIn
 
@@ -57,172 +87,393 @@
         </div>
 
     </div>
+
 </section>
 
 <section class="py-5 bg-light">
 
     <div class="container">
 
-        <div class="row text-center">
+        <div class="row g-4 text-center">
 
-            <div class="col-md-3 col-6 mb-4">
+            <div class="col-lg-3 col-md-6">
 
-                <h2 class="fw-bold text-primary">4+</h2>
+                <div class="card border-0 shadow-sm h-100">
 
-                <p>Projetos Publicados</p>
+                    <div class="card-body py-4">
 
-            </div>
+                        <h2 class="display-6 fw-bold text-primary mb-2">
 
-            <div class="col-md-3 col-6 mb-4">
+                            4+
 
-                <h2 class="fw-bold text-primary">15+</h2>
+                        </h2>
 
-                <p>Tecnologias</p>
+                        <p class="mb-0 fw-semibold" data-i18n="home_stats_projects">
 
-            </div>
-
-            <div class="col-md-3 col-6 mb-4">
-
-                <h2 class="fw-bold text-primary">100%</h2>
-
-                <p>Projetos Autorais</p>
-
-            </div>
-
-            <div class="col-md-3 col-6 mb-4">
-
-                <h2 class="fw-bold text-primary">Full Stack</h2>
-
-                <p>Backend • Frontend • Deploy</p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="stack py-5">
-
-    <div class="container text-center">
-
-        <h2 class="fw-bold mb-5">
-
-            Tecnologias
-
-        </h2>
-
-        <div class="row">
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>.NET 9</h5>
-                    <p class="small text-muted">
-                        APIs REST e aplicações modernas
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>C#</h5>
-                    <p class="small text-muted">
-                        Backend orientado a objetos
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>Angular</h5>
-                    <p class="small text-muted">
-                        SPAs modernas
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>React</h5>
-                    <p class="small text-muted">
-                        Interfaces modernas
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>Next.js</h5>
-                    <p class="small text-muted">
-                        Frontend de alta performance
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>TypeScript</h5>
-                    <p class="small text-muted">
-                        Desenvolvimento escalável
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>SQL Server</h5>
-                    <p class="small text-muted">
-                        Banco de dados relacional
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-6 mb-4">
-                <div class="tech-card p-4 shadow-sm">
-                    <h5>Docker & Linux</h5>
-                    <p class="small text-muted">
-                        Deploy em produção
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="py-5">
-
-    <div class="container">
-
-        <h2 class="text-center fw-bold mb-5">
-
-            Principais Projetos
-
-        </h2>
-
-        <div class="row">
-
-            <div class="col-lg-3 mb-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="card-body">
-
-                        <h4>DevClub</h4>
-
-                        <p>
-
-                            Plataforma Full Stack desenvolvida com
-                            ASP.NET Core, Next.js, React e TypeScript.
+                            Projetos Publicados
 
                         </p>
 
-                        <a asp-page="/Projetos" class="btn btn-outline-primary">
+                    </div>
 
-                            Saiba mais
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body py-4">
+
+                        <h2 class="display-6 fw-bold text-primary mb-2">
+
+                            15+
+
+                        </h2>
+
+                        <p class="mb-0 fw-semibold" data-i18n="home_stats_technologies">
+
+                            Tecnologias
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body py-4">
+
+                        <h2 class="display-6 fw-bold text-primary mb-2">
+
+                            100%
+
+                        </h2>
+
+                        <p class="mb-0 fw-semibold" data-i18n="home_stats_author">
+
+                            Projetos Autorais
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="card border-0 shadow-sm h-100">
+
+                    <div class="card-body py-4">
+
+                        <h2 class="display-6 fw-bold text-primary mb-2">
+
+                            Full Stack
+
+                        </h2>
+
+                        <p class="mb-1 fw-semibold" data-i18n="home_stats_fullstack">
+
+                            Desenvolvimento Completo
+
+                        </p>
+
+                        <small class="text-muted" data-i18n="home_stats_fullstack_desc">
+
+                            Backend • Frontend • Deploy
+
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="stack py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-uppercase text-primary fw-semibold small">
+                Expertise
+            </span>
+
+            <h2 class="fw-bold display-5 mt-2" data-i18n="home_stack_title">
+
+                Tecnologias
+
+            </h2>
+
+            <p class="text-muted mx-auto" style="max-width:700px;" data-i18n="home_stack_subtitle">
+
+                Tecnologias e ferramentas utilizadas no desenvolvimento
+                de aplicações modernas, escaláveis e de alta performance.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-microsoft display-5 text-primary mb-3"></i>
+
+                        <h5 class="fw-bold">.NET 9</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_dotnet_desc">
+
+                            APIs REST e aplicações modernas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-code-slash display-5 text-primary mb-3"></i>
+
+                        <h5 class="fw-bold">C#</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_csharp_desc">
+
+                            Backend orientado a objetos.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-triangle-half display-5 text-danger mb-3"></i>
+
+                        <h5 class="fw-bold">Angular</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_angular_desc">
+
+                            Desenvolvimento de SPAs modernas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-lightning-charge display-5 text-info mb-3"></i>
+
+                        <h5 class="fw-bold">React</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_react_desc">
+
+                            Interfaces modernas e reativas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-lightning-fill display-5 text-dark mb-3"></i>
+
+                        <h5 class="fw-bold">Next.js</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_next_desc">
+
+                            Frontend com alta performance e SEO.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-filetype-tsx display-5 text-primary mb-3"></i>
+
+                        <h5 class="fw-bold">TypeScript</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_typescript_desc">
+
+                            Código robusto, seguro e escalável.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-database display-5 text-success mb-3"></i>
+
+                        <h5 class="fw-bold">SQL Server</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_sql_desc">
+
+                            Banco de dados relacional.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+
+                <div class="tech-card card border-0 shadow-sm rounded-4 h-100 text-center">
+
+                    <div class="card-body p-4">
+
+                        <i class="bi bi-box display-5 text-primary mb-3"></i>
+
+                        <h5 class="fw-bold">Docker & Linux</h5>
+
+                        <p class="small text-muted mb-0" data-i18n="home_stack_docker_desc">
+
+                            Containers, deploy e ambientes Linux.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="text-uppercase text-primary fw-semibold small">
+                Portfolio
+            </span>
+
+            <h2 class="display-5 fw-bold mt-2" data-i18n="home_projects_title">
+
+                Principais Projetos
+
+            </h2>
+
+            <p class="text-muted mx-auto" style="max-width:720px;" data-i18n="home_projects_subtitle">
+
+                Alguns dos projetos desenvolvidos utilizando tecnologias modernas,
+                arquitetura limpa e foco em performance.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-xl-3 col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body d-flex flex-column p-4">
+
+                        <div class="mb-3">
+
+                            <span class="badge bg-primary">
+                                Full Stack
+                            </span>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+
+                            DevClub
+
+                        </h4>
+
+                        <p class="text-muted flex-grow-1" data-i18n="home_project_devclub">
+
+                            Plataforma Full Stack desenvolvida com ASP.NET Core,
+                            Next.js, React e TypeScript.
+
+                        </p>
+
+                        <a asp-page="/Projetos" class="btn btn-outline-primary mt-auto">
+
+                            <span data-i18n="home_project_button">
+                                Saiba mais
+                            </span>
+
+                            <i class="bi bi-arrow-right ms-2"></i>
 
                         </a>
 
@@ -232,39 +483,30 @@
 
             </div>
 
-            <div class="col-lg-3 mb-4">
+            <div class="col-xl-3 col-lg-6">
 
-                <div class="card h-100 shadow-sm">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
 
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column p-4">
 
-                        <h4>TreineMais</h4>
+                        <div class="mb-3">
 
-                        <p>
+                            <span class="badge bg-success">
+                                SaaS
+                            </span>
 
-                            Plataforma para academias
-                            e personal trainers.
+                        </div>
 
-                        </p>
+                        <h4 class="fw-bold">
 
-                    </div>
+                            TreineMais
 
-                </div>
+                        </h4>
 
-            </div>
+                        <p class="text-muted flex-grow-1" data-i18n="home_project_treinemais">
 
-            <div class="col-lg-3 mb-4">
-
-                <div class="card h-100 shadow-sm">
-
-                    <div class="card-body">
-
-                        <h4>AgendaPro</h4>
-
-                        <p>
-
-                            Sistema completo
-                            de agendamento online.
+                            Plataforma para academias e personal trainers com
+                            gerenciamento completo de alunos e treinos.
 
                         </p>
 
@@ -274,18 +516,63 @@
 
             </div>
 
-            <div class="col-lg-3 mb-4">
+            <div class="col-xl-3 col-lg-6">
 
-                <div class="card h-100 shadow-sm">
+                <div class="card border-0 shadow-sm rounded-4 h-100">
 
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column p-4">
 
-                        <h4>StockChef</h4>
+                        <div class="mb-3">
 
-                        <p>
+                            <span class="badge bg-warning text-dark">
+                                Web App
+                            </span>
 
-                            Plataforma para gestão
-                            de estoque de restaurantes.
+                        </div>
+
+                        <h4 class="fw-bold">
+
+                            AgendaPro
+
+                        </h4>
+
+                        <p class="text-muted flex-grow-1" data-i18n="home_project_agendapro">
+
+                            Sistema completo de agendamento online com foco em
+                            praticidade e produtividade.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-xl-3 col-lg-6">
+
+                <div class="card border-0 shadow-sm rounded-4 h-100">
+
+                    <div class="card-body d-flex flex-column p-4">
+
+                        <div class="mb-3">
+
+                            <span class="badge bg-danger">
+                                ERP
+                            </span>
+
+                        </div>
+
+                        <h4 class="fw-bold">
+
+                            StockChef
+
+                        </h4>
+
+                        <p class="text-muted flex-grow-1" data-i18n="home_project_stockchef">
+
+                            Plataforma para gestão de estoque, compras e produção
+                            de restaurantes.
 
                         </p>
 
@@ -301,26 +588,31 @@
 
 </section>
 
-<section class="py-5 text-center bg-dark text-white">
+<section class="py-5 text-center text-white" style="background:linear-gradient(135deg,#0d6efd,#0b5ed7);">
 
     <div class="container">
 
-        <h2 class="fw-bold">
+        <h2 class="display-5 fw-bold" data-i18n="home_cta_title">
 
             Vamos construir algo incrível juntos?
 
         </h2>
 
-        <p class="mt-3">
+        <p class="lead mt-3 mb-4 mx-auto" style="max-width:700px;" data-i18n="home_cta_description">
 
-            Estou disponível para oportunidades como
-            Desenvolvedor Full Stack, Backend .NET ou Frontend.
+            Estou disponível para oportunidades como Desenvolvedor Full Stack,
+            Backend .NET ou Frontend, contribuindo com soluções modernas,
+            escaláveis e de alta qualidade.
 
         </p>
 
-        <a asp-page="/Contato" class="btn btn-light btn-lg mt-3">
+        <a asp-page="/Contato" class="btn btn-light btn-lg px-5">
 
-            Entrar em contato
+            <i class="bi bi-envelope-fill me-2"></i>
+
+            <span data-i18n="home_btn_contact">
+                Entrar em contato
+            </span>
 
         </a>
 

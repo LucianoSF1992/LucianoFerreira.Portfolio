@@ -57,11 +57,12 @@ window.translations = {
         // PROJETOS
         projects_hero_title: "Projetos",
         projects_hero_subtitle: "Aplicações Full Stack desenvolvidas para resolver problemas reais, utilizando tecnologias modernas, arquitetura escalável e boas práticas de desenvolvimento.",
-        projects_main_title: "🚀 Projetos em Destaque",
+        projects_featured_title: "🚀 Projetos em Destaque",
         projects_other_title: "💻 Outros Projetos",
 
         project_status_done: "MVP concluído",
-        project_status_progress: "Em andamento",
+        project_status_published: "Publicado",
+        project_status_development: "Em desenvolvimento",
 
         project_treinemais_title: "TreineMais — Sistema de Treinos para Academias",
         project_treinemais_desc: "Sistema web para academias e personal trainers criarem treinos personalizados, gerenciarem alunos e acompanharem a evolução dos exercícios. Possui autenticação com ASP.NET Identity e controle de acesso por perfil.",
@@ -70,12 +71,13 @@ window.translations = {
         project_agendapro_desc_1: "Sistema web para gerenciamento de agendamentos de serviços, com controle de clientes, profissionais, serviços, horários e status de atendimento.",
         project_agendapro_desc_2: "Possui autenticação com perfis de acesso, dashboard com indicadores do dia, controle de conflito de horários e relatórios gerenciais por período.",
 
-        project_erp_title: "StockChef Platform — Sistema de Gestão para Restaurantes",
-        project_erp_desc: "Plataforma Full Stack para gerenciamento de estoque de restaurantes, desenvolvida com Angular, ASP.NET Core, APIs REST e Clean Architecture, com foco em escalabilidade e organização do código.",
+        project_stockchef_title: "StockChef Platform — Sistema de Gestão para Restaurantes",
+        project_stockchef_desc_1: "Plataforma Full Stack para gerenciamento de estoque de restaurantes, desenvolvida com arquitetura limpa, separação em camadas e APIs REST. O projeto contempla controle de produtos, categorias, movimentações, fornecedores e gestão operacional.",
+        project_stockchef_desc_2: "O frontend está sendo desenvolvido em Angular e o backend em ASP.NET Core, seguindo princípios de Clean Architecture, SOLID e Domain-Driven Design.",
 
 
         project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Ensino",
-        project_devclub_status: "Publicado",
+
         project_devclub_desc_1: "Plataforma Full Stack desenvolvida para o concurso de Desenvolvedor Full Stack da DevClub. Possui autenticação de usuários, área do aluno, catálogo de cursos, páginas institucionais, formulário de contato integrado com API REST e interface totalmente responsiva.",
         project_devclub_desc_2: "Desenvolvido com Next.js no frontend e ASP.NET Core no backend, utilizando Entity Framework Core, SQLite e deploy em Linux com Nginx, PM2 e Systemd",
 
@@ -154,11 +156,12 @@ window.translations = {
         // PROJECTS
         projects_hero_title: "Projects",
         projects_hero_subtitle: "Full Stack applications built to solve real-world problems using modern technologies, scalable architecture and software engineering best practices.",
-        projects_main_title: "🚀 Featured Projects",
+        projects_featured_title: "🚀 Featured Projects",
         projects_other_title: "💻 Other Projects",
 
         project_status_done: "MVP completed",
-        project_status_progress: "In progress",
+        project_status_published: "Published",
+        project_status_development: "In development",
 
         project_treinemais_title: "TreineMais — Training Management System for Gyms",
         project_treinemais_desc: "Web system for gyms and personal trainers to create personalized workout plans, manage students, and track exercise progress. Includes authentication with ASP.NET Identity and role-based access control.",
@@ -167,12 +170,13 @@ window.translations = {
         project_agendapro_desc_1: "Web system for service appointment management, including control of clients, professionals, services, time slots, and appointment status.",
         project_agendapro_desc_2: "Includes authentication with access roles, dashboard with daily indicators, scheduling conflict control, and management reports by period.",
 
-        project_erp_title: "StockChef Platform — Restaurant Management System",
-        project_erp_desc: "Full Stack restaurant management platform built with Angular, ASP.NET Core, REST APIs and Clean Architecture, focused on scalability, maintainability and clean code.",
+        project_stockchef_title: "StockChef Platform — Restaurant Management System",
+        project_stockchef_desc_1: "Full Stack platform for restaurant inventory management, built with Clean Architecture, layered architecture and REST APIs. The project includes products, categories, stock movements, suppliers and operational management.",
+        project_stockchef_desc_2: "The frontend is being developed with Angular and the backend with ASP.NET Core following Clean Architecture, SOLID and Domain-Driven Design principles.",
 
 
         project_devclub_title: "DevClub Next Level — Full Stack Learning Platform",
-        project_devclub_status: "Published",
+
         project_devclub_desc_1: "Full Stack platform developed for the DevClub Full Stack Developer Contest with authentication, student area, course catalog, contact API and responsive interface.",
         project_devclub_desc_2: "Built with Next.js on the frontend and ASP.NET Core on the backend using Entity Framework Core, SQLite and deployed on Linux with Nginx, PM2 and Systemd.",
 
@@ -250,11 +254,12 @@ window.translations = {
         // PROYECTOS
         projects_hero_title: "Proyectos",
         projects_hero_subtitle: "Aplicaciones Full Stack desarrolladas para resolver problemas reales utilizando tecnologías modernas, arquitectura escalable y buenas prácticas de desarrollo.",
-        projects_main_title: "🚀 Proyectos Destacados",
+        projects_featured_title: "🚀 Proyectos Destacados",
         projects_other_title: "💻 Otros Proyectos",
 
         project_status_done: "MVP finalizado",
-        project_status_progress: "En desarrollo",
+        project_status_published: "Publicado",
+        project_status_development: "En desarrollo",
 
         project_treinemais_title: "TreineMais — Sistema de Entrenamientos para Gimnasios",
         project_treinemais_desc: "Sistema web para gimnasios y entrenadores personales que permite crear entrenamientos personalizados, gestionar alumnos y acompañar la evolución de los ejercicios. Incluye autenticación con ASP.NET Identity y control de acceso por perfil.",
@@ -263,11 +268,12 @@ window.translations = {
         project_agendapro_desc_1: "Sistema web para la gestión de citas de servicios, con control de clientes, profesionales, servicios, horarios y estado de atención.",
         project_agendapro_desc_2: "Incluye autenticación con perfiles de acceso, panel con indicadores del día, control de conflictos de horario e informes gerenciales por período.",
 
-        project_erp_title: "StockChef Platform — Sistema de Gestión para Restaurantes",
-        project_erp_desc: "Plataforma Full Stack para la gestión de restaurantes desarrollada con Angular, ASP.NET Core, APIs REST y Clean Architecture, enfocada en escalabilidad y mantenimiento.",
+        project_stockchef_title: "StockChef Platform — Sistema de Gestión para Restaurantes",
+        project_stockchef_desc_1: "Plataforma Full Stack para la gestión del inventario de restaurantes, desarrollada con Clean Architecture, arquitectura por capas y APIs REST.",
+        project_stockchef_desc_2: "El frontend se desarrolla con Angular y el backend con ASP.NET Core siguiendo los principios de Clean Architecture, SOLID y Domain-Driven Design.",
 
         project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Enseñanza",
-        project_devclub_status: "Publicado",
+
         project_devclub_desc_1: "Plataforma Full Stack desarrollada para el concurso de Desarrollador Full Stack de DevClub. Incluye autenticación de usuarios, área del alumno, catálogo de cursos, formulario de contacto integrado con API REST e interfaz totalmente responsiva.",
         project_devclub_desc_2: "Desarrollada con Next.js en el frontend y ASP.NET Core en el backend utilizando Entity Framework Core, SQLite y desplegada en Linux con Nginx, PM2 y Systemd.",
 
