@@ -33,7 +33,7 @@ window.translations = {
         home_stack_ef: "ORM e acesso a dados",
         home_stack_sqlserver: "Modelagem e consultas",
         home_stack_html: "Estruturação semântica",
-        home_stack_css: "Layouts responsivos",
+        home_stack_css: "Diseños responsivos",
         home_stack_bootstrap: "UI moderna e responsiva",
         home_stack_javascript: "Interatividade e dinamismo",
 
@@ -124,14 +124,14 @@ window.translations = {
         home_btn_github: "GitHub",
         home_btn_linkedin: "LinkedIn",
 
-        home_stack_title: "Technical Stack",
+        home_stack_title: "Technology Stack",
         home_stack_csharp: "Object-oriented programming",
         home_stack_aspnet: "Web applications and REST APIs",
         home_stack_ef: "ORM and data access",
-        home_stack_sqlserver: "Modeling and queries",
+        home_stack_sqlserver: "Database modeling and queries",
         home_stack_html: "Semantic structure",
         home_stack_css: "Responsive layouts",
-        home_stack_bootstrap: "Modern and responsive UI",
+        home_stack_bootstrap: "Modern, responsive UI",
         home_stack_javascript: "Interactivity and dynamism",
 
         // SOBRE
@@ -220,14 +220,14 @@ window.translations = {
         home_btn_github: "GitHub",
         home_btn_linkedin: "LinkedIn",
 
-        home_stack_title: "Stack Técnico",
+        home_stack_title: "Stack Tecnológico",
         home_stack_csharp: "Programación orientada a objetos",
         home_stack_aspnet: "Aplicaciones web y APIs REST",
         home_stack_ef: "ORM y acceso a datos",
         home_stack_sqlserver: "Modelado y consultas",
         home_stack_html: "Estructura semántica",
-        home_stack_css: "Layouts responsivos",
-        home_stack_bootstrap: "UI moderna y responsiva",
+        home_stack_css: "Diseños responsivos",
+        home_stack_bootstrap: "Interfaz moderna y responsiva",
         home_stack_javascript: "Interactividad y dinamismo",
 
         // SOBRE
