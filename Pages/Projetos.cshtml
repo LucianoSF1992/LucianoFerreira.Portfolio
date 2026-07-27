@@ -4,137 +4,255 @@
     ViewData["Title"] = "Projetos";
 }
 
-<section class="projects-hero text-white text-center d-flex align-items-center">
-    <div class="container">
-        <h1 class="section-title fw-bold" data-i18n="projects_hero_title"></h1>
-        <p class="lead mt-3" data-i18n="projects_hero_subtitle"></p>
+<section class="projects-hero text-white d-flex align-items-center py-5">
+
+    <div class="container text-center">
+
+        <span class="badge rounded-pill bg-light text-dark px-4 py-2 shadow-sm mb-4">
+            Portfolio
+        </span>
+
+        <h1 class="display-4 fw-bold" data-i18n="projects_hero_title">
+        </h1>
+
+        <p class="lead mt-3 mx-auto" style="max-width:750px;" data-i18n="projects_hero_subtitle">
+        </p>
+
     </div>
+
 </section>
 
-<section class="py-5">
+<section class="py-5 bg-light">
+
     <div class="container">
 
-        <h3 class="fw-bold mb-4" data-i18n="projects_featured_title"></h3>
+        <h2 class="fw-bold text-center mb-5" data-i18n="projects_featured_title">
+        </h2>
 
         <div class="row g-4">
 
             <!-- DevClub -->
-            <div class="col-md-6">
-                <div class="project-card p-4 h-100">
 
-                    <h5 class="fw-bold" data-i18n="project_devclub_title"></h5>
+            <div class="col-lg-6">
 
-                    <span class="badge bg-success mb-3" data-i18n="project_status_published"></span>
+                <div class="card border-0 shadow-sm rounded-4 h-100">
 
-                    <p data-i18n="project_devclub_desc_1"></p>
+                    <div class="card-body p-4 d-flex flex-column">
 
-                    <p data-i18n="project_devclub_desc_2"></p>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
 
-                    <p class="small text-muted">
-                        Next.js • React • TypeScript • Tailwind CSS • ASP.NET Core • Entity Framework Core • SQLite •
-                        Linux • Nginx • PM2 • Systemd
-                    </p>
+                            <h4 class="fw-bold mb-0" data-i18n="project_devclub_title">
+                            </h4>
 
-                    <div class="d-flex gap-2 flex-wrap mt-3">
-                        <a href="https://devclub.lucianoferreiradev.com" target="_blank" class="btn btn-primary btn-sm"
-                           data-i18n="project_btn_system">
-                        </a>
+                            <span class="badge bg-success" data-i18n="project_status_published">
+                            </span>
 
-                        <a href="https://github.com/LucianoSF1992/devclub-concurso" target="_blank"
-                           class="btn btn-outline-dark btn-sm" data-i18n="project_btn_github">
-                        </a>
+                        </div>
+
+                        <p data-i18n="project_devclub_desc_1"></p>
+
+                        <p data-i18n="project_devclub_desc_2"></p>
+
+                        <p class="small text-muted mt-auto">
+
+                            <i class="bi bi-code-slash me-2"></i>
+
+                            Next.js • React • TypeScript • Tailwind CSS • ASP.NET Core • EF Core • SQLite • Linux •
+                            Nginx • PM2 • Systemd
+
+                        </p>
+
+                        <div class="d-flex gap-2 flex-wrap mt-3">
+
+                            <a href="https://devclub.lucianoferreiradev.com" target="_blank" class="btn btn-primary">
+
+                                <i class="bi bi-box-arrow-up-right me-2"></i>
+
+                                <span data-i18n="project_btn_system"></span>
+
+                            </a>
+
+                            <a href="https://github.com/LucianoSF1992/devclub-concurso" target="_blank"
+                               class="btn btn-outline-dark">
+
+                                <i class="bi bi-github me-2"></i>
+
+                                <span data-i18n="project_btn_github"></span>
+
+                            </a>
+
+                        </div>
+
                     </div>
 
                 </div>
+
             </div>
 
             <!-- TreineMais -->
-            <div class="col-md-6">
-                <div class="project-card p-4 h-100">
 
-                    <h5 class="fw-bold" data-i18n="project_treinemais_title"></h5>
+            <div class="col-lg-6">
 
-                    <span class="badge bg-success mb-3" data-i18n="project_status_done"></span>
+                <div class="card border-0 shadow-sm rounded-4 h-100">
 
-                    <p data-i18n="project_treinemais_desc"></p>
+                    <div class="card-body p-4 d-flex flex-column">
 
-                    <p class="small text-muted">
-                        C# • .NET 8 • ASP.NET Core MVC • EF Core • Identity • SQL Server • Docker • Nginx
-                    </p>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
 
-                    <div class="d-flex gap-2 flex-wrap mt-3">
+                            <h4 class="fw-bold mb-0" data-i18n="project_treinemais_title">
+                            </h4>
 
-                        <a href="https://treinemais.lucianoferreiradev.com" target="_blank"
-                           class="btn btn-primary btn-sm" data-i18n="project_btn_system">
-                        </a>
+                            <span class="badge bg-success" data-i18n="project_status_done">
+                            </span>
 
-                        <a href="https://github.com/LucianoSF1992/TreineMais" target="_blank"
-                           class="btn btn-outline-dark btn-sm" data-i18n="project_btn_github">
-                        </a>
+                        </div>
+
+                        <p data-i18n="project_treinemais_desc"></p>
+
+                        <p class="small text-muted mt-auto">
+
+                            <i class="bi bi-code-slash me-2"></i>
+
+                            C# • .NET 8 • ASP.NET Core MVC • EF Core • Identity • SQL Server • Docker • Nginx
+
+                        </p>
+
+                        <div class="d-flex gap-2 flex-wrap mt-3">
+
+                            <a href="https://treinemais.lucianoferreiradev.com" target="_blank" class="btn btn-primary">
+
+                                <i class="bi bi-box-arrow-up-right me-2"></i>
+
+                                <span data-i18n="project_btn_system"></span>
+
+                            </a>
+
+                            <a href="https://github.com/LucianoSF1992/TreineMais" target="_blank"
+                               class="btn btn-outline-dark">
+
+                                <i class="bi bi-github me-2"></i>
+
+                                <span data-i18n="project_btn_github"></span>
+
+                            </a>
+
+                        </div>
 
                     </div>
 
                 </div>
+
             </div>
 
             <!-- AgendaPro -->
-            <div class="col-md-6">
-                <div class="project-card p-4 h-100">
 
-                    <h5 class="fw-bold" data-i18n="project_agendapro_title"></h5>
+            <div class="col-lg-6">
 
-                    <span class="badge bg-success mb-3" data-i18n="project_status_done"></span>
+                <div class="card border-0 shadow-sm rounded-4 h-100">
 
-                    <p data-i18n="project_agendapro_desc_1"></p>
+                    <div class="card-body p-4 d-flex flex-column">
 
-                    <p data-i18n="project_agendapro_desc_2"></p>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
 
-                    <p class="small text-muted">
-                        .NET 9 • ASP.NET Core MVC • C# • Entity Framework Core • SQL Server • Bootstrap 5
-                    </p>
+                            <h4 class="fw-bold mb-0" data-i18n="project_agendapro_title">
+                            </h4>
 
-                    <div class="d-flex gap-2 flex-wrap mt-3">
+                            <span class="badge bg-success" data-i18n="project_status_done">
+                            </span>
 
-                        <a href="https://agendapro.lucianoferreiradev.com" target="_blank"
-                           class="btn btn-primary btn-sm" data-i18n="project_btn_system">
-                        </a>
+                        </div>
 
-                        <a href="https://github.com/LucianoSF1992/AgendaPro" target="_blank"
-                           class="btn btn-outline-dark btn-sm" data-i18n="project_btn_github">
-                        </a>
+                        <p data-i18n="project_agendapro_desc_1"></p>
+
+                        <p data-i18n="project_agendapro_desc_2"></p>
+
+                        <p class="small text-muted mt-auto">
+
+                            <i class="bi bi-code-slash me-2"></i>
+
+                            .NET 9 • ASP.NET Core MVC • C# • EF Core • SQL Server • Bootstrap 5
+
+                        </p>
+
+                        <div class="d-flex gap-2 flex-wrap mt-3">
+
+                            <a href="https://agendapro.lucianoferreiradev.com" target="_blank" class="btn btn-primary">
+
+                                <i class="bi bi-box-arrow-up-right me-2"></i>
+
+                                <span data-i18n="project_btn_system"></span>
+
+                            </a>
+
+                            <a href="https://github.com/LucianoSF1992/AgendaPro" target="_blank"
+                               class="btn btn-outline-dark">
+
+                                <i class="bi bi-github me-2"></i>
+
+                                <span data-i18n="project_btn_github"></span>
+
+                            </a>
+
+                        </div>
 
                     </div>
 
                 </div>
+
             </div>
 
             <!-- StockChef -->
-            <div class="col-md-6">
-                <div class="project-card p-4 h-100">
 
-                    <h5 class="fw-bold" data-i18n="project_stockchef_title"></h5>
+            <div class="col-lg-6">
 
-                    <span class="badge bg-warning text-dark mb-3" data-i18n="project_status_development"></span>
+                <div class="card border-0 shadow-sm rounded-4 h-100">
 
-                    <p data-i18n="project_stockchef_desc_1"></p>
+                    <div class="card-body p-4 d-flex flex-column">
 
-                    <p data-i18n="project_stockchef_desc_2"></p>
+                        <div class="d-flex justify-content-between align-items-start mb-3">
 
-                    <p class="small text-muted">
-                        .NET 9 • ASP.NET Core • Angular • TypeScript • Entity Framework Core • SQL Server • REST API •
-                        Clean Architecture
-                    </p>
+                            <h4 class="fw-bold mb-0" data-i18n="project_stockchef_title">
+                            </h4>
 
-                    <div class="d-flex gap-2 flex-wrap mt-3">
-                        <a href="https://github.com/LucianoSF1992/stockchef-platform" target="_blank"
-                           class="btn btn-outline-dark btn-sm" data-i18n="project_btn_github">
-                        </a>
+                            <span class="badge bg-warning text-dark" data-i18n="project_status_development">
+                            </span>
+
+                        </div>
+
+                        <p data-i18n="project_stockchef_desc_1"></p>
+
+                        <p data-i18n="project_stockchef_desc_2"></p>
+
+                        <p class="small text-muted mt-auto">
+
+                            <i class="bi bi-code-slash me-2"></i>
+
+                            .NET 9 • ASP.NET Core • Angular • TypeScript • EF Core • SQL Server • REST API • Clean
+                            Architecture
+
+                        </p>
+
+                        <div class="d-flex gap-2 flex-wrap mt-3">
+
+                            <a href="https://github.com/LucianoSF1992/stockchef-platform" target="_blank"
+                               class="btn btn-outline-dark">
+
+                                <i class="bi bi-github me-2"></i>
+
+                                <span data-i18n="project_btn_github"></span>
+
+                            </a>
+
+                        </div>
+
                     </div>
 
                 </div>
+
             </div>
 
         </div>
 
     </div>
+
 </section>
