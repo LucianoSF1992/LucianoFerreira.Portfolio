@@ -80,11 +80,6 @@ window.translations = {
         project_devclub_desc_2: "Desenvolvido com Next.js no frontend e ASP.NET Core no backend, utilizando Entity Framework Core, SQLite e deploy em Linux com Nginx, PM2 e Systemd",
 
 
-        project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Enseñanza",
-        project_devclub_status: "Publicado",
-        project_devclub_desc_1: "Plataforma Full Stack desarrollada para el concurso DevClub con autenticación, área del alumno, catálogo de cursos, API de contacto e interfaz responsiva.",
-        project_devclub_desc_2: "Desarrollada con Next.js en el frontend y ASP.NET Core en el backend utilizando Entity Framework Core, SQLite y desplegada en Linux con Nginx, PM2 y Systemd.",
-
         project_btn_system: "Ver Sistema",
         project_btn_github: "GitHub",
 
@@ -270,6 +265,11 @@ window.translations = {
 
         project_erp_title: "StockChef Platform — Sistema de Gestión para Restaurantes",
         project_erp_desc: "Plataforma Full Stack para la gestión de restaurantes desarrollada con Angular, ASP.NET Core, APIs REST y Clean Architecture, enfocada en escalabilidad y mantenimiento.",
+
+        project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Enseñanza",
+        project_devclub_status: "Publicado",
+        project_devclub_desc_1: "Plataforma Full Stack desarrollada para el concurso de Desarrollador Full Stack de DevClub. Incluye autenticación de usuarios, área del alumno, catálogo de cursos, formulario de contacto integrado con API REST e interfaz totalmente responsiva.",
+        project_devclub_desc_2: "Desarrollada con Next.js en el frontend y ASP.NET Core en el backend utilizando Entity Framework Core, SQLite y desplegada en Linux con Nginx, PM2 y Systemd.",
 
         project_btn_system: "Ver Sistema",
         project_btn_github: "GitHub",
