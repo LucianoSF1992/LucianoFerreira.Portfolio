@@ -1,48 +1,46 @@
-﻿window.addEventListener("scroll", function () {
+﻿// ============================================
+// Luciano Ferreira - Portfolio
+// site.js (Parte 1)
+// Home + Sobre (PT)
+// ============================================
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
     const navbar = document.getElementById("mainNavbar");
 
     if (!navbar) return;
 
-    if (window.scrollY > 50) {
+    if (window.scrollY > 50)
         navbar.classList.add("scrolled");
-    } else {
+    else
         navbar.classList.remove("scrolled");
-    }
 });
 
+// ============================================
+// TRANSLATIONS
+// ============================================
+
 window.translations = {
+
     pt: {
 
-        // ==========================
-        // NAVBAR + FOOTER
-        // ==========================
-
-        menu_home: "Home",
-        menu_about: "Sobre",
-        menu_projects: "Projetos",
-        menu_contact: "Contato",
-
-        footer_role: "Desenvolvedor Full Stack",
-
-        // ==========================
+        // =====================================
         // HOME
-        // ==========================
+        // =====================================
 
         home_hero_badge: "Disponível para oportunidades",
 
         home_hero_name: "Luciano Silva Ferreira",
 
-        home_hero_subtitle: "Desenvolvedor Full Stack com experiência em .NET e tecnologias modernas de desenvolvimento web.",
+        home_hero_subtitle:
+            "Desenvolvedor Full Stack com experiência em .NET e tecnologias modernas de desenvolvimento web.",
 
-        home_hero_description: "Construindo sistemas completos — do backend estruturado ao frontend responsivo — com foco em performance, escalabilidade e boas práticas.",
+        home_hero_description:
+            "Construindo sistemas completos — do backend estruturado ao frontend responsivo — com foco em performance, escalabilidade e boas práticas.",
 
         home_btn_projects: "Ver Projetos",
 
         home_btn_contact: "Entrar em contato",
-
-        home_btn_github: "GitHub",
-
-        home_btn_linkedin: "LinkedIn",
 
         home_stats_projects: "Projetos desenvolvidos",
 
@@ -52,278 +50,312 @@ window.translations = {
 
         home_stats_fullstack: "Full Stack",
 
-        home_stats_fullstack_desc: "Desenvolvimento de aplicações modernas com foco em qualidade, desempenho e escalabilidade.",
+        home_stats_fullstack_desc:
+            "Desenvolvimento de aplicações modernas com foco em qualidade, desempenho e escalabilidade.",
 
         home_stack_title: "Tecnologias",
 
-        home_stack_subtitle: "Tecnologias e ferramentas utilizadas no desenvolvimento de aplicações modernas, escaláveis e de alta performance.",
+        home_stack_subtitle:
+            "Tecnologias e ferramentas utilizadas no desenvolvimento de aplicações modernas, escaláveis e de alta performance.",
 
-        home_stack_dotnet_desc: "APIs REST e aplicações modernas.",
+        home_stack_dotnet_desc:
+            "APIs REST e aplicações modernas.",
 
-        home_stack_csharp_desc: "Backend orientado a objetos.",
+        home_stack_csharp_desc:
+            "Backend orientado a objetos.",
 
-        home_stack_angular_desc: "Desenvolvimento de SPAs modernas.",
+        home_stack_angular_desc:
+            "Desenvolvimento de aplicações SPA.",
 
-        home_stack_react_desc: "Interfaces modernas e reativas.",
+        home_stack_react_desc:
+            "Interfaces modernas e reativas.",
 
-        home_stack_next_desc: "Frontend com alta performance e SEO.",
+        home_stack_next_desc:
+            "Frontend com alta performance e SEO.",
 
-        home_stack_typescript_desc: "Código robusto, seguro e escalável.",
+        home_stack_typescript_desc:
+            "Código robusto, seguro e escalável.",
 
-        home_stack_sql_desc: "Banco de dados relacional.",
+        home_stack_sql_desc:
+            "Banco de dados relacional.",
 
-        home_stack_docker_desc: "Containers, deploy e ambientes Linux.",
+        home_stack_docker_desc:
+            "Containers, deploy e ambientes Linux.",
 
-        home_projects_title: "Principais Projetos",
+        home_projects_title:
+            "Principais Projetos",
 
-        home_projects_subtitle: "Alguns dos projetos desenvolvidos utilizando tecnologias modernas, arquitetura limpa e foco em performance.",
+        home_projects_subtitle:
+            "Projetos desenvolvidos utilizando tecnologias modernas, arquitetura limpa e foco em performance.",
 
-        home_project_devclub: "Plataforma Full Stack desenvolvida com ASP.NET Core, Next.js, React e TypeScript.",
+        home_project_devclub:
+            "Plataforma Full Stack desenvolvida com ASP.NET Core, Next.js, React e TypeScript.",
 
-        home_project_treinemais: "Plataforma para academias e personal trainers com gerenciamento completo de alunos e treinos.",
+        home_project_button:
+            "Saiba mais",
 
-        home_project_agendapro: "Sistema completo de agendamento online com foco em praticidade e produtividade.",
+        home_project_treinemais:
+            "Plataforma para academias e personal trainers com gerenciamento completo de alunos e treinos.",
 
-        home_project_stockchef: "Plataforma para gestão de estoque, compras e produção de restaurantes.",
+        home_project_agendapro:
+            "Sistema completo de agendamento online com foco em produtividade.",
 
-        home_project_button: "Saiba mais",
+        home_project_stockchef:
+            "Plataforma para gestão de estoque, compras e produção de restaurantes.",
 
-        home_cta_title: "Vamos construir algo incrível juntos?",
+        home_cta_title:
+            "Vamos construir algo incrível juntos?",
 
-        home_cta_description: "Estou disponível para oportunidades como Desenvolvedor Full Stack, Backend .NET ou Frontend, contribuindo com soluções modernas, escaláveis e de alta qualidade.",
+        home_cta_description:
+            "Estou disponível para oportunidades como Desenvolvedor Full Stack, Backend .NET ou Frontend, contribuindo com soluções modernas, escaláveis e de alta qualidade.",
 
-        // ==========================
-        // HOME (LEGADO)
-        // Será removido na limpeza final
-        // ==========================
-
-        home_stack_csharp: "Programação orientada a objetos",
-        home_stack_aspnet: "Aplicações web e APIs REST",
-        home_stack_ef: "ORM e acesso a dados",
-        home_stack_sqlserver: "Modelagem e consultas",
-        home_stack_html: "Estruturação semântica",
-        home_stack_css: "Layouts responsivos",
-        home_stack_bootstrap: "UI moderna e responsiva",
-        home_stack_javascript: "Interatividade e dinamismo",
-
-        // ==========================
+        // =====================================
         // SOBRE
-        // ==========================
+        // =====================================
 
-        about_hero_title: "Sobre Mim",
+        about_hero_title:
+            "Sobre Mim",
 
-        about_hero_subtitle: "Desenvolvedor Full Stack com foco em .NET e experiência em construção de aplicações web completas, do backend estruturado ao frontend responsivo.",
+        about_hero_subtitle:
+            "Desenvolvedor Full Stack com foco em .NET e experiência na construção de aplicações web completas.",
 
-        about_btn_contact: "🚀 Vamos conversar",
+        about_btn_contact:
+            "🚀 Vamos conversar",
 
-        about_btn_projects: "Ver projetos",
+        about_btn_projects:
+            "Ver projetos",
 
-        about_role: "Desenvolvedor Full Stack (foco em .NET)",
+        about_name:
+            "Luciano Silva Ferreira",
 
-        about_text_1: "Desenvolvedor Full Stack com experiência em aplicações web e APIs, atuando do design de endpoints e regras de negócio até a construção de interfaces responsivas. Forte base em .NET (C#, ASP.NET Core), com facilidade para adaptar e trabalhar com diferentes stacks conforme o projeto.",
+        about_role:
+            "Desenvolvedor Full Stack (.NET)",
 
-        about_text_2: "Trabalho com APIs REST, autenticação/autorização, modelagem de banco de dados, boas práticas de arquitetura, organização de código e versionamento com Git.",
+        about_text_2:
+            "Tenho experiência no desenvolvimento de APIs REST, autenticação e autorização, modelagem de banco de dados, Entity Framework Core, SQL Server e arquitetura em camadas.",
 
-        about_text_3: "Busco oportunidades como Desenvolvedor Full Stack onde eu possa contribuir com soluções escaláveis, código bem estruturado e evolução contínua — em .NET ou outras stacks, conforme a necessidade do time.",
+        about_text_3:
+            "Também atuo no desenvolvimento de interfaces modernas utilizando Bootstrap, JavaScript, TypeScript, Angular, React e Next.js, buscando sempre oferecer uma excelente experiência ao usuário.",
 
-        about_name: "Luciano Silva Ferreira",
+        about_text_4:
+            "Estou em constante evolução profissional, estudando novas tecnologias e aplicando boas práticas para desenvolver soluções robustas, escaláveis e de alta qualidade.",
 
-        about_text_4: "Tenho experiência no desenvolvimento de APIs REST, autenticação e autorização, modelagem de banco de dados, Entity Framework Core, SQL Server e arquitetura em camadas.",
+        about_text_5:
+            "Busco oportunidades onde possa contribuir com soluções modernas, código limpo e arquitetura bem estruturada.",
 
-        about_text_5: "Também atuo no desenvolvimento de interfaces modernas utilizando Bootstrap, JavaScript, TypeScript, Angular, React e Next.js, buscando sempre uma ótima experiência para o usuário.",
+        about_text_6:
+            "Acredito no aprendizado contínuo e na colaboração como pilares para entregar software de qualidade.",
 
-        about_text_6: "Estou em constante evolução profissional, estudando novas tecnologias e aplicando boas práticas para desenvolver soluções robustas, escaláveis e de alta qualidade.",
+        about_skills_title:
+            "Principais Competências",
 
-        about_backend_title: "Backend",
+        // Backend
 
-        about_backend_1: ".NET",
-        about_backend_2: "ASP.NET Core",
-        about_backend_3: "C#",
-        about_backend_4: "Entity Framework Core",
-        about_backend_5: "SQL Server",
-        about_backend_6: "REST APIs",
+        about_backend_title:
+            "Backend",
 
-        about_frontend_title: "Frontend",
+        about_backend_1:
+            ".NET",
 
-        about_frontend_1: "HTML5",
-        about_frontend_2: "CSS3",
-        about_frontend_3: "Bootstrap 5",
-        about_frontend_4: "JavaScript",
-        about_frontend_5: "TypeScript",
-        about_frontend_6: "Angular / React / Next.js",
+        about_backend_2:
+            "ASP.NET Core",
 
-        about_devops_title: "DevOps e Ferramentas",
+        about_backend_3:
+            "C#",
 
-        about_devops_1: "Git e GitHub",
-        about_devops_2: "Docker",
-        about_devops_3: "Linux",
-        about_devops_4: "Nginx",
-        about_devops_5: "Clean Architecture",
-        about_devops_6: "SOLID",
+        about_backend_4:
+            "Entity Framework Core",
 
-        about_name: "Luciano Silva Ferreira",
+        about_backend_5:
+            "SQL Server",
 
-        about_text_4: "I have experience developing REST APIs, authentication and authorization, database modeling, Entity Framework Core, SQL Server and layered architecture.",
+        about_backend_6:
+            "REST APIs",
 
-        about_text_5: "I also build modern user interfaces using Bootstrap, JavaScript, TypeScript, Angular, React and Next.js, always focusing on delivering an excellent user experience.",
+        // Frontend
 
-        about_text_6: "I continuously improve my skills by studying new technologies and applying best practices to develop robust, scalable and high-quality solutions.",
+        about_frontend_title:
+            "Frontend",
 
-        about_backend_title: "Backend",
+        about_frontend_1:
+            "HTML5",
 
-        about_backend_1: ".NET",
-        about_backend_2: "ASP.NET Core",
-        about_backend_3: "C#",
-        about_backend_4: "Entity Framework Core",
-        about_backend_5: "SQL Server",
-        about_backend_6: "REST APIs",
+        about_frontend_2:
+            "CSS3",
 
-        about_frontend_title: "Frontend",
+        about_frontend_3:
+            "Bootstrap",
 
-        about_frontend_1: "HTML5",
-        about_frontend_2: "CSS3",
-        about_frontend_3: "Bootstrap 5",
-        about_frontend_4: "JavaScript",
-        about_frontend_5: "TypeScript",
-        about_frontend_6: "Angular / React / Next.js",
+        about_frontend_4:
+            "JavaScript",
 
-        about_devops_title: "DevOps & Tools",
+        about_frontend_5:
+            "TypeScript",
 
-        about_devops_1: "Git & GitHub",
-        about_devops_2: "Docker",
-        about_devops_3: "Linux",
-        about_devops_4: "Nginx",
-        about_devops_5: "Clean Architecture",
-        about_devops_6: "SOLID",
+        about_frontend_6:
+            "Angular • React • Next.js",
 
-        about_name: "Luciano Silva Ferreira",
+        // DevOps
 
-        about_text_4: "Tengo experiencia desarrollando APIs REST, autenticación y autorización, modelado de bases de datos, Entity Framework Core, SQL Server y arquitectura por capas.",
+        about_devops_title:
+            "DevOps e Ferramentas",
 
-        about_text_5: "También desarrollo interfaces modernas utilizando Bootstrap, JavaScript, TypeScript, Angular, React y Next.js, siempre buscando ofrecer una excelente experiencia al usuario.",
+        about_devops_1:
+            "Git",
 
-        about_text_6: "Me encuentro en constante evolución profesional, estudiando nuevas tecnologías y aplicando buenas prácticas para desarrollar soluciones robustas, escalables y de alta calidad.",
+        about_devops_2:
+            "GitHub",
 
-        about_backend_title: "Backend",
+        about_devops_3:
+            "Docker",
 
-        about_backend_1: ".NET",
-        about_backend_2: "ASP.NET Core",
-        about_backend_3: "C#",
-        about_backend_4: "Entity Framework Core",
-        about_backend_5: "SQL Server",
-        about_backend_6: "APIs REST",
+        about_devops_4:
+            "Linux",
 
-        about_frontend_title: "Frontend",
+        about_devops_5:
+            "Nginx",
 
-        about_frontend_1: "HTML5",
-        about_frontend_2: "CSS3",
-        about_frontend_3: "Bootstrap 5",
-        about_frontend_4: "JavaScript",
-        about_frontend_5: "TypeScript",
-        about_frontend_6: "Angular / React / Next.js",
+        about_devops_6:
+            "Clean Architecture",
 
-        about_devops_title: "DevOps y Herramientas",
-
-        about_devops_1: "Git y GitHub",
-        about_devops_2: "Docker",
-        about_devops_3: "Linux",
-        about_devops_4: "Nginx",
-        about_devops_5: "Clean Architecture",
-        about_devops_6: "SOLID",
-
-        about_skills_title: "Principais Competências",
-
-        about_skills_base: "Base principal",
-
-        about_skills_front: "Frontend e fundamentos",
-
-        about_skills_extra: "Conhecimentos adicionais",
-
-        // ==========================
+        // =====================================
         // PROJETOS
-        // ==========================
+        // =====================================
 
-        projects_hero_title: "Projetos",
+        projects_hero_title:
+            "Projetos",
 
-        projects_hero_subtitle: "Aplicações Full Stack desenvolvidas para resolver problemas reais, utilizando tecnologias modernas, arquitetura escalável e boas práticas de desenvolvimento.",
+        projects_hero_subtitle:
+            "Aplicações Full Stack desenvolvidas para resolver problemas reais utilizando tecnologias modernas, arquitetura escalável e boas práticas de desenvolvimento.",
 
-        projects_featured_title: "🚀 Projetos em Destaque",
+        projects_featured_title:
+            "🚀 Projetos em Destaque",
 
-        projects_other_title: "💻 Outros Projetos",
+        project_status_published:
+            "Publicado",
 
-        project_status_done: "MVP concluído",
+        project_status_done:
+            "MVP concluído",
 
-        project_status_published: "Publicado",
+        project_status_development:
+            "Em desenvolvimento",
 
-        project_status_development: "Em desenvolvimento",
+        // DevClub
 
-        project_treinemais_title: "TreineMais — Sistema de Treinos para Academias",
+        project_devclub_title:
+            "DevClub Next Level — Plataforma Full Stack de Ensino",
 
-        project_treinemais_desc: "Sistema web para academias e personal trainers criarem treinos personalizados, gerenciarem alunos e acompanharem a evolução dos exercícios. Possui autenticação com ASP.NET Identity e controle de acesso por perfil.",
+        project_devclub_desc_1:
+            "Plataforma Full Stack desenvolvida para o concurso de Desenvolvedor Full Stack da DevClub. Possui autenticação de usuários, área do aluno, catálogo de cursos, páginas institucionais, formulário de contato integrado com API REST e interface totalmente responsiva.",
 
-        project_agendapro_title: "AgendaPro – Sistema de Gestão de Agendamentos",
+        project_devclub_desc_2:
+            "Desenvolvido com Next.js no frontend e ASP.NET Core no backend utilizando Entity Framework Core, SQLite e deploy em Linux com Nginx, PM2 e Systemd.",
 
-        project_agendapro_desc_1: "Sistema web para gerenciamento de agendamentos de serviços, com controle de clientes, profissionais, serviços, horários e status de atendimento.",
+        // TreineMais
 
-        project_agendapro_desc_2: "Possui autenticação com perfis de acesso, dashboard com indicadores do dia, controle de conflito de horários e relatórios gerenciais por período.",
+        project_treinemais_title:
+            "TreineMais — Sistema de Treinos para Academias",
 
-        project_stockchef_title: "StockChef Platform — Sistema de Gestão para Restaurantes",
+        project_treinemais_desc:
+            "Sistema web para academias e personal trainers criarem treinos personalizados, gerenciarem alunos e acompanharem a evolução dos exercícios. Possui autenticação com ASP.NET Identity e controle de acesso por perfil.",
 
-        project_stockchef_desc_1: "Plataforma Full Stack para gerenciamento de estoque de restaurantes, desenvolvida com arquitetura limpa, separação em camadas e APIs REST. O projeto contempla controle de produtos, categorias, movimentações, fornecedores e gestão operacional.",
+        // AgendaPro
 
-        project_stockchef_desc_2: "O frontend está sendo desenvolvido em Angular e o backend em ASP.NET Core, seguindo princípios de Clean Architecture, SOLID e Domain-Driven Design.",
+        project_agendapro_title:
+            "AgendaPro — Sistema de Gestão de Agendamentos",
 
-        project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Ensino",
+        project_agendapro_desc_1:
+            "Sistema web para gerenciamento de agendamentos de serviços com controle de clientes, profissionais, serviços, horários e status dos atendimentos.",
 
-        project_devclub_desc_1: "Plataforma Full Stack desenvolvida para o concurso de Desenvolvedor Full Stack da DevClub. Possui autenticação de usuários, área do aluno, catálogo de cursos, páginas institucionais, formulário de contato integrado com API REST e interface totalmente responsiva.",
+        project_agendapro_desc_2:
+            "Possui autenticação com perfis de acesso, dashboard com indicadores do dia, controle de conflitos de horários e relatórios gerenciais.",
 
-        project_devclub_desc_2: "Desenvolvido com Next.js no frontend e ASP.NET Core no backend, utilizando Entity Framework Core, SQLite e deploy em Linux com Nginx, PM2 e Systemd",
+        // StockChef
 
-        project_btn_system: "Ver Sistema",
+        project_stockchef_title:
+            "StockChef Platform — Sistema de Gestão para Restaurantes",
 
-        project_btn_github: "GitHub",
+        project_stockchef_desc_1:
+            "Plataforma Full Stack para gerenciamento de estoque de restaurantes desenvolvida utilizando Clean Architecture, APIs REST e arquitetura em camadas.",
 
-        projects_github_title: "Repositórios no GitHub",
+        project_stockchef_desc_2:
+            "Frontend desenvolvido em Angular e backend em ASP.NET Core seguindo princípios SOLID, Domain-Driven Design e Clean Architecture.",
 
-        projects_github_desc: "Aplicações web, APIs REST e projetos práticos desenvolvidos com foco em aprendizado contínuo e boas práticas.",
 
-        projects_github_button: "Ver no GitHub",
+        // Botões
 
-        // ==========================
+        project_btn_system:
+            "Ver Sistema",
+
+        project_btn_github:
+            "GitHub",
+
+        // =====================================
         // CONTATO
-        // ==========================
+        // =====================================
 
-        contact_hero_title: "Contato",
+        contact_hero_title:
+            "Contato",
 
-        contact_hero_subtitle: "Vamos conversar sobre oportunidades e projetos.",
+        contact_hero_subtitle:
+            "Vamos conversar sobre oportunidades, projetos ou novas ideias.",
 
-        contact_label_name: "Nome",
+        contact_label_name:
+            "Nome",
 
-        contact_label_email: "Email",
+        contact_placeholder_name:
+            "Seu nome",
 
-        contact_label_message: "Mensagem",
+        contact_label_email:
+            "E-mail",
 
-        contact_placeholder_name: "Seu nome",
+        contact_placeholder_email:
+            "Seu melhor e-mail",
 
-        contact_placeholder_email: "Seu melhor email",
+        contact_label_message:
+            "Mensagem",
 
-        contact_placeholder_message: "Digite sua mensagem",
+        contact_placeholder_message:
+            "Digite sua mensagem",
 
-        contact_email_subject: "Novo contato do portfólio",
+        contact_btn_submit:
+            "Enviar Mensagem",
 
-        contact_btn_submit: "Enviar Mensagem",
+        contact_btn_sending:
+            "Enviando...",
 
-        contact_btn_sending: "Enviando...",
+        contact_email_subject:
+            "Novo contato do portfólio",
 
-        contact_error_default: "Não foi possível enviar sua mensagem. Tente novamente.",
+        contact_error_default:
+            "Não foi possível enviar sua mensagem. Tente novamente.",
 
-        contact_error_connection: "Falha de conexão ao enviar. Tente novamente."
+        contact_error_connection:
+            "Falha na conexão. Verifique sua internet e tente novamente.",
+
+        // =====================================
+        // ERROR
+        // =====================================
+
+        error_title:
+            "Ocorreu um erro",
+
+        error_description:
+            "Desculpe, ocorreu um erro ao processar sua solicitação.",
+
+        error_request_id:
+            "ID da Solicitação:",
+
+        error_back_home:
+            "Voltar para a página inicial"
+
     },
+
     en: {
 
-        // ==========================
+        // =====================================
         // NAVBAR + FOOTER
-        // ==========================
+        // =====================================
 
         menu_home: "Home",
         menu_about: "About",
@@ -332,332 +364,1027 @@ window.translations = {
 
         footer_role: "Full Stack Developer",
 
-        // ==========================
+        // =====================================
         // HOME
-        // ==========================
+        // =====================================
 
         home_hero_badge: "Available for opportunities",
 
         home_hero_name: "Luciano Silva Ferreira",
 
-        home_hero_subtitle: "Full Stack Developer with experience in .NET and modern web development technologies.",
+        home_hero_subtitle:
+            "Full Stack Developer with experience in .NET and modern web development technologies.",
 
-        home_hero_description: "Building complete systems — from structured backend to responsive frontend — focusing on performance, scalability and best development practices.",
+        home_hero_description:
+            "Building complete systems—from structured back-end to responsive front-end—with a focus on performance, scalability and software engineering best practices.",
 
         home_btn_projects: "View Projects",
 
-        home_btn_contact: "Get in Touch",
+        home_btn_contact: "Contact Me",
 
-        home_btn_github: "GitHub",
-
-        home_btn_linkedin: "LinkedIn",
-
-        home_stats_projects: "Completed Projects",
+        home_stats_projects: "Projects",
 
         home_stats_technologies: "Technologies",
 
-        home_stats_author: "Specialized in",
+        home_stats_author: "Specialist in",
 
         home_stats_fullstack: "Full Stack",
 
-        home_stats_fullstack_desc: "Development of modern applications focused on quality, performance and scalability.",
+        home_stats_fullstack_desc:
+            "Modern application development focused on quality, performance and scalability.",
 
         home_stack_title: "Technologies",
 
-        home_stack_subtitle: "Technologies and tools used to build modern, scalable and high-performance applications.",
+        home_stack_subtitle:
+            "Technologies and tools used to build modern, scalable and high-performance applications.",
 
-        home_stack_dotnet_desc: "REST APIs and modern applications.",
+        home_stack_dotnet_desc:
+            "REST APIs and modern applications.",
 
-        home_stack_csharp_desc: "Object-oriented backend development.",
+        home_stack_csharp_desc:
+            "Object-oriented backend development.",
 
-        home_stack_angular_desc: "Modern SPA development.",
+        home_stack_angular_desc:
+            "Modern SPA development.",
 
-        home_stack_react_desc: "Modern and reactive user interfaces.",
+        home_stack_react_desc:
+            "Modern reactive interfaces.",
 
-        home_stack_next_desc: "High-performance frontend with SEO.",
+        home_stack_next_desc:
+            "High-performance frontend with SEO.",
 
-        home_stack_typescript_desc: "Robust, safe and scalable code.",
+        home_stack_typescript_desc:
+            "Robust, secure and scalable code.",
 
-        home_stack_sql_desc: "Relational database.",
+        home_stack_sql_desc:
+            "Relational database.",
 
-        home_stack_docker_desc: "Containers, deployment and Linux environments.",
+        home_stack_docker_desc:
+            "Containers, deployment and Linux environments.",
 
-        home_projects_title: "Featured Projects",
+        home_projects_title:
+            "Featured Projects",
 
-        home_projects_subtitle: "Some of the projects developed using modern technologies, clean architecture and a strong focus on performance.",
+        home_projects_subtitle:
+            "Projects developed using modern technologies, Clean Architecture and performance-oriented solutions.",
 
-        home_project_devclub: "Full Stack platform developed with ASP.NET Core, Next.js, React and TypeScript.",
+        home_project_devclub:
+            "Full Stack platform built with ASP.NET Core, Next.js, React and TypeScript.",
 
-        home_project_treinemais: "Platform for gyms and personal trainers with complete student and workout management.",
+        home_project_treinemais:
+            "Platform for gyms and personal trainers with complete student and workout management.",
 
-        home_project_agendapro: "Complete online scheduling system focused on productivity and ease of use.",
+        home_project_agendapro:
+            "Complete online scheduling system focused on productivity.",
 
-        home_project_stockchef: "Platform for restaurant inventory, purchasing and production management.",
+        home_project_stockchef:
+            "Restaurant inventory, purchasing and production management platform.",
 
-        home_project_button: "Learn More",
+        home_project_button:
+            "Learn More",
 
-        home_cta_title: "Let's build something amazing together?",
+        home_cta_title:
+            "Let's build something amazing together?",
 
-        home_cta_description: "I'm available for opportunities as a Full Stack Developer, .NET Backend Developer or Frontend Developer, delivering modern, scalable and high-quality solutions.",
+        home_cta_description:
+            "I'm available for opportunities as a Full Stack Developer, .NET Backend Developer or Frontend Developer, delivering modern, scalable and high-quality solutions.",
 
-        // ==========================
-        // HOME (LEGACY)
-        // Will be removed after final review
-        // ==========================
-
-        home_stack_csharp: "Object-oriented programming",
-        home_stack_aspnet: "Web applications and REST APIs",
-        home_stack_ef: "ORM and data access",
-        home_stack_sqlserver: "Database modeling and queries",
-        home_stack_html: "Semantic structure",
-        home_stack_css: "Responsive layouts",
-        home_stack_bootstrap: "Modern, responsive UI",
-        home_stack_javascript: "Interactivity and dynamism",
-
-        // ==========================
+        // =====================================
         // ABOUT
-        // ==========================
+        // =====================================
 
-        about_hero_title: "About Me",
+        about_hero_title:
+            "About Me",
 
-        about_hero_subtitle: "Full Stack Developer focused on .NET with experience building complete web applications, from structured backend to responsive frontend.",
+        about_hero_subtitle:
+            "Full Stack Developer focused on .NET with experience building complete web applications.",
 
-        about_btn_contact: "🚀 Let's Talk",
+        about_btn_contact:
+            "🚀 Let's Talk",
 
-        about_btn_projects: "View Projects",
+        about_btn_projects:
+            "View Projects",
 
-        about_role: "Full Stack Developer (.NET focused)",
+        about_name:
+            "Luciano Silva Ferreira",
 
-        about_text_1: "Full Stack Developer with experience in web applications and APIs, working from endpoint design and business rules to building responsive interfaces. Strong foundation in .NET (C#, ASP.NET Core), with the ability to adapt and work with different stacks depending on the project.",
+        about_role:
+            "Full Stack Developer (.NET)",
 
-        about_text_2: "I work with REST APIs, authentication/authorization, database modeling, architecture best practices, code organization and version control using Git.",
+        about_text_2:
+            "I have experience developing REST APIs, authentication and authorization, database modeling, Entity Framework Core, SQL Server and layered architecture.",
 
-        about_text_3: "I am looking for opportunities as a Full Stack Developer where I can contribute with scalable solutions, well-structured code and continuous improvement — using .NET or other technologies according to the team's needs.",
+        about_text_3:
+            "I also build modern user interfaces using Bootstrap, JavaScript, TypeScript, Angular, React and Next.js, always focusing on delivering an excellent user experience.",
 
-        about_skills_title: "Key Skills",
+        about_text_4:
+            "I continuously improve my skills by studying new technologies and applying best practices to create robust, scalable and high-quality solutions.",
 
-        about_skills_base: "Core Stack",
+        about_text_5:
+            "I'm looking for opportunities where I can contribute with modern solutions, clean code and well-structured architecture.",
 
-        about_skills_front: "Frontend and Fundamentals",
+        about_text_6:
+            "I believe continuous learning and collaboration are essential for delivering great software.",
 
-        about_skills_extra: "Additional Knowledge",
+        about_skills_title:
+            "Key Skills",
 
-        // ==========================
+        about_backend_title:
+            "Backend",
+
+        about_backend_1: ".NET",
+        about_backend_2: "ASP.NET Core",
+        about_backend_3: "C#",
+        about_backend_4: "Entity Framework Core",
+        about_backend_5: "SQL Server",
+        about_backend_6: "REST APIs",
+
+        about_frontend_title:
+            "Frontend",
+
+        about_frontend_1: "HTML5",
+        about_frontend_2: "CSS3",
+        about_frontend_3: "Bootstrap",
+        about_frontend_4: "JavaScript",
+        about_frontend_5: "TypeScript",
+        about_frontend_6: "Angular • React • Next.js",
+
+        about_devops_title:
+            "DevOps & Tools",
+
+        about_devops_1: "Git",
+        about_devops_2: "GitHub",
+        about_devops_3: "Docker",
+        about_devops_4: "Linux",
+        about_devops_5: "Nginx",
+        about_devops_6: "Clean Architecture",
+
+        // =====================================
         // PROJECTS
-        // ==========================
+        // =====================================
 
-        projects_hero_title: "Projects",
+        projects_hero_title:
+            "Projects",
 
-        projects_hero_subtitle: "Full Stack applications built to solve real-world problems using modern technologies, scalable architecture and software engineering best practices.",
+        projects_hero_subtitle:
+            "Full Stack applications built to solve real-world problems using modern technologies, scalable architecture and software engineering best practices.",
 
-        projects_featured_title: "🚀 Featured Projects",
+        projects_featured_title:
+            "🚀 Featured Projects",
 
-        projects_other_title: "💻 Other Projects",
+        project_status_published:
+            "Published",
 
-        project_status_done: "MVP Completed",
+        project_status_done:
+            "MVP Completed",
 
-        project_status_published: "Published",
+        project_status_development:
+            "In Development",
 
-        project_status_development: "In Development",
+        project_devclub_title:
+            "DevClub Next Level — Full Stack Learning Platform",
 
-        project_treinemais_title: "TreineMais — Training Management System for Gyms",
+        project_devclub_desc_1:
+            "Full Stack platform developed for the DevClub Full Stack Developer Challenge featuring authentication, student dashboard, course catalog, REST API integration and a fully responsive interface.",
 
-        project_treinemais_desc: "Web system for gyms and personal trainers to create personalized workout plans, manage students and track exercise progress. Includes authentication with ASP.NET Identity and role-based access control.",
+        project_devclub_desc_2:
+            "Built with Next.js on the frontend and ASP.NET Core on the backend using Entity Framework Core, SQLite and deployed on Linux with Nginx, PM2 and Systemd.",
 
-        project_agendapro_title: "AgendaPro – Scheduling Management System",
+        project_treinemais_title:
+            "TreineMais — Gym Training Management System",
 
-        project_agendapro_desc_1: "Web system for service appointment management, including clients, professionals, services, schedules and appointment status.",
+        project_treinemais_desc:
+            "Web platform for gyms and personal trainers to manage students and personalized workout plans with ASP.NET Identity authentication.",
 
-        project_agendapro_desc_2: "Includes authentication with access roles, dashboard with daily indicators, scheduling conflict control and management reports.",
+        project_agendapro_title:
+            "AgendaPro — Scheduling Management System",
 
-        project_stockchef_title: "StockChef Platform — Restaurant Management System",
+        project_agendapro_desc_1:
+            "Scheduling platform for managing customers, professionals, services and appointments.",
 
-        project_stockchef_desc_1: "Full Stack platform for restaurant inventory management built with Clean Architecture, layered architecture and REST APIs. Includes products, categories, stock movements, suppliers and operational management.",
+        project_agendapro_desc_2:
+            "Includes authentication, dashboards, scheduling conflict detection and management reports.",
 
-        project_stockchef_desc_2: "The frontend is being developed with Angular and the backend with ASP.NET Core following Clean Architecture, SOLID and Domain-Driven Design principles.",
+        project_stockchef_title:
+            "StockChef Platform — Restaurant Management System",
 
-        project_devclub_title: "DevClub Next Level — Full Stack Learning Platform",
+        project_stockchef_desc_1:
+            "Restaurant inventory management platform built using Clean Architecture, REST APIs and layered architecture.",
 
-        project_devclub_desc_1: "Full Stack platform developed for the DevClub Full Stack Developer Contest featuring authentication, student area, course catalog, contact API and a fully responsive interface.",
+        project_stockchef_desc_2:
+            "Frontend developed with Angular and backend built with ASP.NET Core following SOLID, Clean Architecture and Domain-Driven Design.",
 
-        project_devclub_desc_2: "Built with Next.js on the frontend and ASP.NET Core on the backend using Entity Framework Core, SQLite and deployed on Linux with Nginx, PM2 and Systemd.",
+        project_btn_system:
+            "View System",
 
-        project_btn_system: "View System",
+        project_btn_github:
+            "GitHub",
 
-        project_btn_github: "GitHub",
-
-        projects_github_title: "GitHub Repositories",
-
-        projects_github_desc: "Web applications, REST APIs and practical projects developed with a focus on continuous learning and best practices.",
-
-        projects_github_button: "View on GitHub",
-
-        // ==========================
+        // =====================================
         // CONTACT
-        // ==========================
+        // =====================================
 
-        contact_hero_title: "Contact",
+        contact_hero_title:
+            "Contact",
 
-        contact_hero_subtitle: "Let's talk about opportunities and projects.",
+        contact_hero_subtitle:
+            "Let's talk about opportunities, projects or new ideas.",
 
-        contact_label_name: "Name",
+        contact_label_name:
+            "Name",
 
-        contact_label_email: "Email",
+        contact_placeholder_name:
+            "Your name",
 
-        contact_label_message: "Message",
+        contact_label_email:
+            "Email",
 
-        contact_placeholder_name: "Your Name",
+        contact_placeholder_email:
+            "Your best email",
 
-        contact_placeholder_email: "Your Best Email",
+        contact_label_message:
+            "Message",
 
-        contact_placeholder_message: "Type Your Message",
+        contact_placeholder_message:
+            "Type your message",
 
-        contact_email_subject: "New Portfolio Contact",
+        contact_btn_submit:
+            "Send Message",
 
-        contact_btn_submit: "Send Message",
+        contact_btn_sending:
+            "Sending...",
 
-        contact_btn_sending: "Sending...",
+        contact_email_subject:
+            "New Portfolio Contact",
 
-        contact_error_default: "Your message could not be sent. Please try again.",
+        contact_error_default:
+            "Your message could not be sent. Please try again.",
 
-        contact_error_connection: "Connection failed while sending. Please try again."
+        contact_error_connection:
+            "Connection failed. Please check your internet connection and try again.",
 
+        // =====================================
+        // ERROR
+        // =====================================
+
+        error_title:
+            "An error has occurred",
+
+        error_description:
+            "Sorry, an error occurred while processing your request.",
+
+        error_request_id:
+            "Request ID:",
+
+        error_back_home:
+            "Back to Home"
     },
 
     es: {
+
+        // =====================================
         // NAVBAR + FOOTER
+        // =====================================
+
         menu_home: "Inicio",
         menu_about: "Sobre mí",
         menu_projects: "Proyectos",
         menu_contact: "Contacto",
+
         footer_role: "Desarrollador Full Stack",
 
+        // =====================================
         // HOME
+        // =====================================
+
         home_hero_badge: "Disponible para oportunidades",
 
         home_hero_name: "Luciano Silva Ferreira",
-        home_hero_subtitle: "Desarrollador Full Stack con experiencia en .NET y tecnologías modernas de desarrollo web.",
-        home_hero_description: "Construyendo sistemas completos — desde un backend estructurado hasta un frontend responsivo — con enfoque en rendimiento, escalabilidad y buenas prácticas.",
+
+        home_hero_subtitle:
+            "Desarrollador Full Stack con experiencia en .NET y tecnologías modernas de desarrollo web.",
+
+        home_hero_description:
+            "Construyendo sistemas completos, desde un backend estructurado hasta un frontend responsivo, con enfoque en rendimiento, escalabilidad y buenas prácticas de desarrollo.",
 
         home_btn_projects: "Ver Proyectos",
-        home_btn_contact: "Ponerse en contacto",
-        home_btn_github: "GitHub",
-        home_btn_linkedin: "LinkedIn",
 
-        home_stats_projects: "Proyectos desarrollados",
+        home_btn_contact: "Contactar",
+
+        home_stats_projects: "Proyectos",
+
         home_stats_technologies: "Tecnologías",
+
         home_stats_author: "Especialista en",
+
         home_stats_fullstack: "Full Stack",
-        home_stats_fullstack_desc: "Desarrollo de aplicaciones modernas con enfoque en calidad, rendimiento y escalabilidad.",
+
+        home_stats_fullstack_desc:
+            "Desarrollo de aplicaciones modernas con enfoque en calidad, rendimiento y escalabilidad.",
 
         home_stack_title: "Tecnologías",
-        home_stack_subtitle: "Tecnologías y herramientas utilizadas para desarrollar aplicaciones modernas, escalables y de alto rendimiento.",
 
-        home_stack_dotnet_desc: "APIs REST y aplicaciones modernas.",
-        home_stack_csharp_desc: "Backend orientado a objetos.",
-        home_stack_angular_desc: "Desarrollo de SPAs modernas.",
-        home_stack_react_desc: "Interfaces modernas y reactivas.",
-        home_stack_next_desc: "Frontend de alto rendimiento con SEO.",
-        home_stack_typescript_desc: "Código robusto, seguro y escalable.",
-        home_stack_sql_desc: "Base de datos relacional.",
-        home_stack_docker_desc: "Contenedores, despliegue y entornos Linux.",
+        home_stack_subtitle:
+            "Tecnologías y herramientas utilizadas para desarrollar aplicaciones modernas, escalables y de alto rendimiento.",
 
-        home_projects_title: "Proyectos Destacados",
-        home_projects_subtitle: "Algunos de los proyectos desarrollados utilizando tecnologías modernas, arquitectura limpia y enfoque en rendimiento.",
+        home_stack_dotnet_desc:
+            "APIs REST y aplicaciones modernas.",
 
-        home_project_devclub: "Plataforma Full Stack desarrollada con ASP.NET Core, Next.js, React y TypeScript.",
-        home_project_treinemais: "Plataforma para gimnasios y entrenadores personales con gestión completa de alumnos y entrenamientos.",
-        home_project_agendapro: "Sistema completo de gestión de citas en línea con enfoque en productividad.",
-        home_project_stockchef: "Plataforma para la gestión de inventario, compras y producción de restaurantes.",
+        home_stack_csharp_desc:
+            "Desarrollo backend orientado a objetos.",
 
-        home_project_button: "Más información",
+        home_stack_angular_desc:
+            "Desarrollo de aplicaciones SPA.",
 
-        home_cta_title: "¿Construimos algo increíble juntos?",
-        home_cta_description: "Estoy disponible para oportunidades como Desarrollador Full Stack, Backend .NET o Frontend, aportando soluciones modernas, escalables y de alta calidad.",
+        home_stack_react_desc:
+            "Interfaces modernas y reactivas.",
 
-        // HOME (LEGADO)
-        home_stack_csharp: "Programación orientada a objetos",
-        home_stack_aspnet: "Aplicaciones web y APIs REST",
-        home_stack_ef: "ORM y acceso a datos",
-        home_stack_sqlserver: "Modelado y consultas",
-        home_stack_html: "Estructura semántica",
-        home_stack_css: "Diseños responsivos",
-        home_stack_bootstrap: "Interfaz moderna y responsiva",
-        home_stack_javascript: "Interactividad y dinamismo",
+        home_stack_next_desc:
+            "Frontend de alto rendimiento con SEO.",
 
+        home_stack_typescript_desc:
+            "Código robusto, seguro y escalable.",
+
+        home_stack_sql_desc:
+            "Base de datos relacional.",
+
+        home_stack_docker_desc:
+            "Contenedores, despliegue y entornos Linux.",
+
+        home_projects_title:
+            "Proyectos Destacados",
+
+        home_projects_subtitle:
+            "Proyectos desarrollados utilizando tecnologías modernas, Clean Architecture y soluciones enfocadas en el rendimiento.",
+
+        home_project_devclub:
+            "Plataforma Full Stack desarrollada con ASP.NET Core, Next.js, React y TypeScript.",
+
+        home_project_treinemais:
+            "Plataforma para gimnasios y entrenadores personales con gestión completa de alumnos y entrenamientos.",
+
+        home_project_agendapro:
+            "Sistema completo de gestión de citas en línea enfocado en la productividad.",
+
+        home_project_stockchef:
+            "Plataforma para la gestión de inventario, compras y producción de restaurantes.",
+
+        home_project_button:
+            "Más información",
+
+        home_cta_title:
+            "¿Construimos algo increíble juntos?",
+
+        home_cta_description:
+            "Estoy disponible para oportunidades como Desarrollador Full Stack, Backend .NET o Frontend, contribuyendo con soluciones modernas, escalables y de alta calidad.",
+
+        // =====================================
         // SOBRE
-        about_hero_title: "Sobre mí",
-        about_hero_subtitle: "Desarrollador Full Stack enfocado en .NET con experiencia en la construcción de aplicaciones web completas, desde backend estructurado hasta frontend responsivo.",
-        about_btn_contact: "🚀 Hablemos",
-        about_btn_projects: "Ver proyectos",
+        // =====================================
 
-        about_role: "Desarrollador Full Stack (enfocado en .NET)",
+        about_hero_title:
+            "Sobre mí",
 
-        about_text_1: "Desarrollador Full Stack con experiencia en aplicaciones web y APIs, trabajando desde el diseño de endpoints y reglas de negocio hasta la construcción de interfaces responsivas. Fuerte base en .NET (C#, ASP.NET Core), con facilidad para adaptarse y trabajar con diferentes stacks según el proyecto.",
-        about_text_2: "Trabajo con APIs REST, autenticación/autorización, modelado de bases de datos, buenas prácticas de arquitectura, organización de código y control de versiones con Git.",
-        about_text_3: "Busco oportunidades como Desarrollador Full Stack donde pueda contribuir con soluciones escalables, código bien estructurado y evolución continua — en .NET u otras tecnologías según las necesidades del equipo.",
+        about_hero_subtitle:
+            "Desarrollador Full Stack especializado en .NET con experiencia en el desarrollo de aplicaciones web completas.",
 
-        about_skills_title: "Principales habilidades",
-        about_skills_base: "Base principal",
-        about_skills_front: "Frontend y fundamentos",
-        about_skills_extra: "Conocimientos adicionales",
+        about_btn_contact:
+            "🚀 Hablemos",
 
+        about_btn_projects:
+            "Ver proyectos",
+
+        about_name:
+            "Luciano Silva Ferreira",
+
+        about_role:
+            "Desarrollador Full Stack (.NET)",
+
+        about_text_2:
+            "Tengo experiencia en el desarrollo de APIs REST, autenticación y autorización, modelado de bases de datos, Entity Framework Core, SQL Server y arquitectura por capas.",
+
+        about_text_3:
+            "También desarrollo interfaces modernas utilizando Bootstrap, JavaScript, TypeScript, Angular, React y Next.js, buscando siempre ofrecer una excelente experiencia al usuario.",
+
+        about_text_4:
+            "Me mantengo en constante evolución profesional, estudiando nuevas tecnologías y aplicando buenas prácticas para crear soluciones robustas, escalables y de alta calidad.",
+
+        about_text_5:
+            "Busco oportunidades donde pueda aportar soluciones modernas, código limpio y una arquitectura bien estructurada.",
+
+        about_text_6:
+            "Creo que el aprendizaje continuo y la colaboración son fundamentales para desarrollar software de calidad.",
+
+        about_skills_title:
+            "Principales Competencias",
+
+        about_backend_title:
+            "Backend",
+
+        about_backend_1: ".NET",
+        about_backend_2: "ASP.NET Core",
+        about_backend_3: "C#",
+        about_backend_4: "Entity Framework Core",
+        about_backend_5: "SQL Server",
+        about_backend_6: "APIs REST",
+
+        about_frontend_title:
+            "Frontend",
+
+        about_frontend_1: "HTML5",
+        about_frontend_2: "CSS3",
+        about_frontend_3: "Bootstrap",
+        about_frontend_4: "JavaScript",
+        about_frontend_5: "TypeScript",
+        about_frontend_6: "Angular • React • Next.js",
+
+        about_devops_title:
+            "DevOps y Herramientas",
+
+        about_devops_1: "Git",
+        about_devops_2: "GitHub",
+        about_devops_3: "Docker",
+        about_devops_4: "Linux",
+        about_devops_5: "Nginx",
+        about_devops_6: "Clean Architecture",
+
+        // =====================================
         // PROYECTOS
-        projects_hero_title: "Proyectos",
-        projects_hero_subtitle: "Aplicaciones Full Stack desarrolladas para resolver problemas reales utilizando tecnologías modernas, arquitectura escalable y buenas prácticas de desarrollo.",
-        projects_featured_title: "🚀 Proyectos Destacados",
-        projects_other_title: "💻 Otros Proyectos",
+        // =====================================
 
-        project_status_done: "MVP finalizado",
-        project_status_published: "Publicado",
-        project_status_development: "En desarrollo",
+        projects_hero_title:
+            "Proyectos",
 
-        project_treinemais_title: "TreineMais — Sistema de Entrenamientos para Gimnasios",
-        project_treinemais_desc: "Sistema web para gimnasios y entrenadores personales que permite crear entrenamientos personalizados, gestionar alumnos y acompañar la evolución de los ejercicios. Incluye autenticación con ASP.NET Identity y control de acceso por perfil.",
+        projects_hero_subtitle:
+            "Aplicaciones Full Stack desarrolladas para resolver problemas reales utilizando tecnologías modernas, arquitectura escalable y buenas prácticas de ingeniería de software.",
 
-        project_agendapro_title: "AgendaPro – Sistema de Gestión de Citas",
-        project_agendapro_desc_1: "Sistema web para la gestión de citas de servicios, con control de clientes, profesionales, servicios, horarios y estado de atención.",
-        project_agendapro_desc_2: "Incluye autenticación con perfiles de acceso, panel con indicadores del día, control de conflictos de horario e informes gerenciales por período.",
+        projects_featured_title:
+            "🚀 Proyectos Destacados",
 
-        project_stockchef_title: "StockChef Platform — Sistema de Gestión para Restaurantes",
-        project_stockchef_desc_1: "Plataforma Full Stack para la gestión del inventario de restaurantes, desarrollada con Clean Architecture, arquitectura por capas y APIs REST.",
-        project_stockchef_desc_2: "El frontend se desarrolla con Angular y el backend con ASP.NET Core siguiendo los principios de Clean Architecture, SOLID y Domain-Driven Design.",
+        project_status_published:
+            "Publicado",
 
-        project_devclub_title: "DevClub Next Level — Plataforma Full Stack de Enseñanza",
-        project_devclub_desc_1: "Plataforma Full Stack desarrollada para el concurso de Desarrollador Full Stack de DevClub. Incluye autenticación de usuarios, área del alumno, catálogo de cursos, formulario de contacto integrado con API REST e interfaz totalmente responsiva.",
-        project_devclub_desc_2: "Desarrollada con Next.js en el frontend y ASP.NET Core en el backend utilizando Entity Framework Core, SQLite y desplegada en Linux con Nginx, PM2 y Systemd.",
+        project_status_done:
+            "MVP Finalizado",
 
-        project_btn_system: "Ver Sistema",
-        project_btn_github: "GitHub",
+        project_status_development:
+            "En Desarrollo",
 
-        projects_github_title: "Repositorios en GitHub",
-        projects_github_desc: "Aplicaciones web, APIs REST y proyectos prácticos desarrollados con enfoque en aprendizaje continuo y buenas prácticas.",
-        projects_github_button: "Ver en GitHub",
+        project_devclub_title:
+            "DevClub Next Level — Plataforma Full Stack Educativa",
 
+        project_devclub_desc_1:
+            "Plataforma Full Stack desarrollada para el concurso de Desarrollador Full Stack de DevClub con autenticación, área del alumno, catálogo de cursos, integración con API REST e interfaz completamente responsiva.",
+
+        project_devclub_desc_2:
+            "Desarrollada con Next.js en el frontend y ASP.NET Core en el backend utilizando Entity Framework Core, SQLite y desplegada en Linux con Nginx, PM2 y Systemd.",
+
+        project_treinemais_title:
+            "TreineMais — Sistema de Entrenamientos para Gimnasios",
+
+        project_treinemais_desc:
+            "Plataforma web para gimnasios y entrenadores personales con gestión de alumnos y entrenamientos personalizados mediante autenticación con ASP.NET Identity.",
+
+        project_agendapro_title:
+            "AgendaPro — Sistema de Gestión de Citas",
+
+        project_agendapro_desc_1:
+            "Plataforma para gestionar clientes, profesionales, servicios y citas.",
+
+        project_agendapro_desc_2:
+            "Incluye autenticación, panel de indicadores, control de conflictos de horarios e informes administrativos.",
+
+        project_stockchef_title:
+            "StockChef Platform — Sistema de Gestión para Restaurantes",
+
+        project_stockchef_desc_1:
+            "Plataforma para la gestión de inventario desarrollada con Clean Architecture, APIs REST y arquitectura por capas.",
+
+        project_stockchef_desc_2:
+            "Frontend desarrollado con Angular y backend en ASP.NET Core siguiendo SOLID, Domain-Driven Design y Clean Architecture.",
+
+        project_btn_system:
+            "Ver Sistema",
+
+        project_btn_github:
+            "GitHub",
+
+        // =====================================
         // CONTACTO
-        contact_hero_title: "Contacto",
-        contact_hero_subtitle: "Hablemos sobre oportunidades y proyectos.",
+        // =====================================
 
-        contact_label_name: "Nombre",
-        contact_label_email: "Correo electrónico",
-        contact_label_message: "Mensaje",
+        contact_hero_title:
+            "Contacto",
 
-        contact_placeholder_name: "Tu nombre",
-        contact_placeholder_email: "Tu mejor correo electrónico",
-        contact_placeholder_message: "Escribe tu mensaje",
+        contact_hero_subtitle:
+            "Hablemos sobre oportunidades, proyectos o nuevas ideas.",
 
-        contact_email_subject: "Nuevo contacto del portafolio",
+        contact_label_name:
+            "Nombre",
 
-        contact_btn_submit: "Enviar Mensaje",
-        contact_btn_sending: "Enviando...",
+        contact_placeholder_name:
+            "Tu nombre",
 
-        contact_error_default: "No fue posible enviar tu mensaje. Inténtalo nuevamente.",
-        contact_error_connection: "Falló la conexión al enviar. Inténtalo nuevamente.",
+        contact_label_email:
+            "Correo electrónico",
 
+        contact_placeholder_email:
+            "Tu mejor correo electrónico",
+
+        contact_label_message:
+            "Mensaje",
+
+        contact_placeholder_message:
+            "Escribe tu mensaje",
+
+        contact_btn_submit:
+            "Enviar Mensaje",
+
+        contact_btn_sending:
+            "Enviando...",
+
+        contact_email_subject:
+            "Nuevo contacto del portafolio",
+
+        contact_error_default:
+            "No fue posible enviar tu mensaje. Inténtalo nuevamente.",
+
+        contact_error_connection:
+            "Error de conexión. Verifica tu internet e inténtalo nuevamente.",
+
+        // =====================================
         // ERROR
-        error_title: "Ha ocurrido un error",
-        error_description: "Lo sentimos. Se produjo un problema al procesar tu solicitud.",
-        error_request_id: "ID de la solicitud:",
-        error_back_home: "Volver al inicio"
+        // =====================================
+
+        error_title:
+            "Ha ocurrido un error",
+
+        error_description:
+            "Lo sentimos. Se produjo un error al procesar tu solicitud.",
+
+        error_request_id:
+            "ID de la solicitud:",
+
+        error_back_home:
+            "Volver al inicio"
+
     }
+
+};
+
+// ============================================
+// LANGUAGE FUNCTIONS
+// ============================================
+
+function applyTranslations(language) {
+
+    const translations = window.translations[language];
+
+    if (!translations) {
+        console.warn(`Idioma '${language}' não encontrado.`);
+        return;
+    }
+
+    // -----------------------------
+    // TEXTOS
+    // -----------------------------
+
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+
+        const key = element.dataset.i18n;
+
+        if (translations[key] !== undefined) {
+            element.textContent = translations[key];
+        }
+
+    });
+
+    // -----------------------------
+    // PLACEHOLDERS
+    // -----------------------------
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(element => {
+
+        const key = element.dataset.i18nPlaceholder;
+
+        if (translations[key] !== undefined) {
+            element.placeholder = translations[key];
+        }
+
+    });
+
+    // -----------------------------
+    // TITLE
+    // -----------------------------
+
+    document.querySelectorAll("[data-i18n-title]").forEach(element => {
+
+        const key = element.dataset.i18nTitle;
+
+        if (translations[key] !== undefined) {
+            element.title = translations[key];
+        }
+
+    });
+
+    // -----------------------------
+    // ARIA LABEL
+    // -----------------------------
+
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(element => {
+
+        const key = element.dataset.i18nAriaLabel;
+
+        if (translations[key] !== undefined) {
+            element.setAttribute("aria-label", translations[key]);
+        }
+
+    });
+
 }
+
+// ============================================
+// BOTÕES DE IDIOMA
+// ============================================
+
+function updateLanguageButtons(language) {
+
+    document.querySelectorAll(".language-switcher button")
+        .forEach(button => {
+
+            button.classList.remove("active");
+
+            const onclick = button.getAttribute("onclick");
+
+            if (onclick && onclick.includes(`'${language}'`)) {
+                button.classList.add("active");
+            }
+
+        });
+
+}
+
+// ============================================
+// ALTERAR IDIOMA
+// ============================================
+
+function setLanguage(language) {
+
+    if (!window.translations[language]) {
+        console.warn(`Idioma '${language}' inexistente.`);
+        return;
+    }
+
+    applyTranslations(language);
+
+    updateLanguageButtons(language);
+
+    localStorage.setItem("language", language);
+
+}
+
+// ============================================
+// INICIALIZAÇÃO
+// ============================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const savedLanguage =
+        localStorage.getItem("language") || "pt";
+
+    setLanguage(savedLanguage);
+
+});
+
+// ============================================
+// UI HELPERS
+// ============================================
+
+const App = {
+
+    init() {
+
+        this.initNavbar();
+        this.initSmoothScroll();
+        this.initBackToTop();
+        this.initLanguageButtons();
+
+    },
+
+    // ============================================
+    // NAVBAR
+    // ============================================
+
+    initNavbar() {
+
+        const navbar = document.querySelector(".navbar");
+
+        if (!navbar)
+            return;
+
+        const updateNavbar = () => {
+
+            if (window.scrollY > 50) {
+
+                navbar.classList.add("navbar-scrolled");
+
+            } else {
+
+                navbar.classList.remove("navbar-scrolled");
+
+            }
+
+        };
+
+        updateNavbar();
+
+        window.addEventListener("scroll", updateNavbar);
+
+    },
+
+    // ============================================
+    // SMOOTH SCROLL
+    // ============================================
+
+    initSmoothScroll() {
+
+        document
+            .querySelectorAll('a[href^="#"]')
+            .forEach(anchor => {
+
+                anchor.addEventListener("click", function (e) {
+
+                    const target =
+                        document.querySelector(this.getAttribute("href"));
+
+                    if (!target)
+                        return;
+
+                    e.preventDefault();
+
+                    target.scrollIntoView({
+
+                        behavior: "smooth",
+                        block: "start"
+
+                    });
+
+                });
+
+            });
+
+    },
+
+    // ============================================
+    // BACK TO TOP
+    // ============================================
+
+    initBackToTop() {
+
+        const button =
+            document.getElementById("backToTop");
+
+        if (!button)
+            return;
+
+        window.addEventListener("scroll", () => {
+
+            button.classList.toggle(
+
+                "show",
+
+                window.scrollY > 300
+
+            );
+
+        });
+
+        button.addEventListener("click", () => {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+    },
+
+    // ============================================
+    // BOTÕES DE IDIOMA
+    // ============================================
+
+    initLanguageButtons() {
+
+        document
+            .querySelectorAll("[data-language]")
+            .forEach(button => {
+
+                button.addEventListener("click", () => {
+
+                    setLanguage(
+
+                        button.dataset.language
+
+                    );
+
+                });
+
+            });
+
+    }
+
+};
+
+// ============================================
+// START
+// ============================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    App.init();
+
+});
+
+// ============================================
+// CONTACT FORM
+// ============================================
+
+const ContactForm = {
+
+    form: null,
+    submitButton: null,
+
+    init() {
+
+        this.form = document.getElementById("contactForm");
+
+        if (!this.form)
+            return;
+
+        this.submitButton =
+            this.form.querySelector("button[type='submit']");
+
+        this.form.addEventListener(
+            "submit",
+            this.handleSubmit.bind(this)
+        );
+
+    },
+
+    async handleSubmit(event) {
+
+        event.preventDefault();
+
+        if (!this.validate())
+            return;
+
+        this.setLoading(true);
+
+        try {
+
+            const formData = new FormData(this.form);
+
+            const response = await fetch(
+
+                this.form.action,
+
+                {
+                    method: "POST",
+                    body: formData
+                }
+
+            );
+
+            if (response.ok) {
+
+                window.location.href =
+                    "/ContatoSucesso";
+
+                return;
+
+            }
+
+            this.showError("contact_error_default");
+
+        }
+        catch {
+
+            this.showError("contact_error_connection");
+
+        }
+        finally {
+
+            this.setLoading(false);
+
+        }
+
+    },
+
+    validate() {
+
+        const name =
+            this.form.querySelector("[name='Nome']");
+
+        const email =
+            this.form.querySelector("[name='Email']");
+
+        const message =
+            this.form.querySelector("[name='Mensagem']");
+
+        if (!name?.value.trim()) {
+
+            name.focus();
+
+            return false;
+
+        }
+
+        if (!email?.value.trim()) {
+
+            email.focus();
+
+            return false;
+
+        }
+
+        const emailRegex =
+            /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(email.value)) {
+
+            email.focus();
+
+            return false;
+
+        }
+
+        if (!message?.value.trim()) {
+
+            message.focus();
+
+            return false;
+
+        }
+
+        return true;
+
+    },
+
+    setLoading(isLoading) {
+
+        if (!this.submitButton)
+            return;
+
+        if (isLoading) {
+
+            this.submitButton.disabled = true;
+
+            const lang =
+                localStorage.getItem("language") || "pt";
+
+            this.submitButton.textContent =
+                window.translations[lang].contact_btn_sending;
+
+        }
+        else {
+
+            this.submitButton.disabled = false;
+
+            const lang =
+                localStorage.getItem("language") || "pt";
+
+            this.submitButton.textContent =
+                window.translations[lang].contact_btn_submit;
+
+        }
+
+    },
+
+    showError(key) {
+
+        const lang =
+            localStorage.getItem("language") || "pt";
+
+        alert(
+
+            window.translations[lang][key]
+
+        );
+
+    }
+
+};
+
+// ============================================
+// INITIALIZATION
+// ============================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    ContactForm.init();
+
+});
