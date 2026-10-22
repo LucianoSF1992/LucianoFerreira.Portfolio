@@ -240,6 +240,17 @@ window.translations = {
         project_status_development:
             "Em desenvolvimento",
 
+        // CargoPulse
+
+        project_cargopulse_title:
+            "CargoPulse — Plataforma de Visibilidade Logística",
+
+        project_cargopulse_desc_1:
+            "Plataforma Full Stack para acompanhamento de operações logísticas, com dashboard de indicadores, consulta de remessas e visualização de informações de rastreamento.",
+
+        project_cargopulse_desc_2:
+            "Desenvolvida com frontend em React e TypeScript, API REST em NestJS, persistência de dados com Prisma e PostgreSQL e ambiente conteinerizado com Docker.",
+
         // DevClub
 
         project_devclub_title:
@@ -541,6 +552,17 @@ window.translations = {
         project_status_development:
             "In Development",
 
+        // CargoPulse
+
+        project_cargopulse_title:
+            "CargoPulse — Logistics Visibility Platform",
+
+        project_cargopulse_desc_1:
+            "Full Stack platform for monitoring logistics operations, featuring a KPI dashboard, shipment lookup and tracking information.",
+
+        project_cargopulse_desc_2:
+            "Built with a React and TypeScript frontend, a NestJS REST API, Prisma and PostgreSQL for data persistence, and a Docker-based containerized environment.",
+
         project_devclub_title:
             "DevClub Next Level — Full Stack Learning Platform",
 
@@ -829,6 +851,17 @@ window.translations = {
 
         project_status_development:
             "En Desarrollo",
+
+        // CargoPulse
+
+        project_cargopulse_title:
+            "CargoPulse — Plataforma de Visibilidad Logística",
+
+        project_cargopulse_desc_1:
+            "Plataforma Full Stack para el seguimiento de operaciones logísticas, con panel de indicadores, consulta de envíos e información de rastreo.",
+
+        project_cargopulse_desc_2:
+            "Desarrollada con frontend en React y TypeScript, API REST en NestJS, persistencia de datos con Prisma y PostgreSQL, y un entorno contenerizado con Docker.",
 
         project_devclub_title:
             "DevClub Next Level — Plataforma Full Stack Educativa",
