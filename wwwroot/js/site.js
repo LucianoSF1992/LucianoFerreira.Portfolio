@@ -82,6 +82,9 @@ window.translations = {
         home_stack_docker_desc:
             "Containers, deploy e ambientes Linux.",
 
+        home_stack_node_desc:
+            "Desenvolvimento backend e APIs com JavaScript e TypeScript.",
+
         home_projects_title:
             "Principais Projetos",
 
@@ -433,6 +436,9 @@ window.translations = {
         home_stack_docker_desc:
             "Containers, deployment and Linux environments.",
 
+        home_stack_node_desc:
+            "Backend development and APIs with JavaScript and TypeScript.",
+
         home_projects_title:
             "Featured Projects",
 
@@ -732,6 +738,9 @@ window.translations = {
 
         home_stack_docker_desc:
             "Contenedores, despliegue y entornos Linux.",
+
+        home_stack_node_desc:
+            "Desarrollo backend y APIs con JavaScript y TypeScript.",
 
         home_projects_title:
             "Proyectos Destacados",
