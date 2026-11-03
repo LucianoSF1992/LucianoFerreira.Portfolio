@@ -132,7 +132,7 @@ window.translations = {
             "Luciano Silva Ferreira",
 
         about_role:
-            "Desenvolvedor Full Stack (.NET)",
+            "Desenvolvedor Full Stack",
 
         about_text_2:
             "Tenho experiência no desenvolvimento de APIs REST, autenticação e autorização, modelagem de banco de dados, Entity Framework Core, SQL Server e arquitetura em camadas.",
@@ -486,7 +486,7 @@ window.translations = {
             "Luciano Silva Ferreira",
 
         about_role:
-            "Full Stack Developer (.NET)",
+            "Full Stack Developer",
 
         about_text_2:
             "I have experience developing REST APIs, authentication and authorization, database modeling, Entity Framework Core, SQL Server and layered architecture.",
@@ -789,7 +789,7 @@ window.translations = {
             "Luciano Silva Ferreira",
 
         about_role:
-            "Desarrollador Full Stack (.NET)",
+            "Desarrollador Full Stack",
 
         about_text_2:
             "Tengo experiencia en el desarrollo de APIs REST, autenticación y autorización, modelado de bases de datos, Entity Framework Core, SQL Server y arquitectura por capas.",

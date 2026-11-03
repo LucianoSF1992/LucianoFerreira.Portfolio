@@ -5,203 +5,127 @@
 }
 
 <section class="about-hero text-white d-flex align-items-center py-5">
-
     <div class="container">
-
         <div class="row align-items-center g-5">
-
-            <!-- FOTO -->
-
             <div class="col-lg-4 text-center">
-
-                <img src="~/images/Luciano.jpg" alt="Luciano Ferreira"
-                     class="img-fluid rounded-circle shadow-lg border border-4 border-white" style="max-width:300px;" />
-
+                <img src="~/images/Luciano.jpg"
+                     alt="Luciano Ferreira, desenvolvedor Full Stack"
+                     class="img-fluid rounded-circle shadow-lg border border-4 border-white"
+                     style="max-width: 300px;" />
             </div>
-
-            <!-- HERO -->
 
             <div class="col-lg-8 text-center text-lg-start">
-
                 <span class="badge rounded-pill bg-light text-dark px-4 py-2 shadow-sm mb-4">
-
                     <span data-i18n="about_role"></span>
-
                 </span>
 
-                <h1 class="display-4 fw-bold mb-3" data-i18n="about_hero_title">
-                </h1>
-
-                <p class="lead mb-4" data-i18n="about_hero_subtitle">
-                </p>
+                <h1 class="display-4 fw-bold mb-3" data-i18n="about_hero_title"></h1>
+                <p class="lead mb-4" data-i18n="about_hero_subtitle"></p>
 
                 <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-
                     <a href="/Contato" class="btn btn-primary btn-lg px-4">
-
                         <i class="bi bi-envelope-fill me-2"></i>
-
                         <span data-i18n="about_btn_contact"></span>
-
                     </a>
-
                     <a href="/Projetos" class="btn btn-outline-light btn-lg px-4">
-
                         <i class="bi bi-folder2-open me-2"></i>
-
                         <span data-i18n="about_btn_projects"></span>
-
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <section class="py-5 bg-light">
-
     <div class="container">
-
-        <div class="row g-5">
-
-            <!-- SOBRE -->
-
+        <div class="row g-5 align-items-start">
             <div class="col-lg-8">
-
-                <h2 class="fw-bold mb-2">
-
-                    <span data-i18n="about_name"></span>
-
-                </h2>
-
-                <p class="text-primary fw-semibold fs-5 mb-4">
-
-                    <span data-i18n="about_role"></span>
-
-                </p>
+                <h2 class="fw-bold mb-2" data-i18n="about_name"></h2>
+                <p class="text-primary fw-semibold fs-5 mb-4" data-i18n="about_role"></p>
 
                 <div class="about-content">
-
                     <p data-i18n="about_text_2"></p>
-
                     <p data-i18n="about_text_3"></p>
-
                     <p data-i18n="about_text_4"></p>
-
                     <p data-i18n="about_text_5"></p>
-
-                    <p class="mb-0" data-i18n="about_text_6">
-                    </p>
-
+                    <p class="mb-0" data-i18n="about_text_6"></p>
                 </div>
 
+                <div class="card border-0 shadow-sm rounded-4 mt-5">
+                    <div class="card-body p-4 p-md-5">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+                            <div>
+                                <span class="badge bg-primary-subtle text-primary mb-2">Full Stack</span>
+                                <h3 class="h4 fw-bold mb-0" data-i18n="project_cargopulse_title"></h3>
+                            </div>
+                            <i class="bi bi-truck fs-1 text-primary" aria-hidden="true"></i>
+                        </div>
+                        <p data-i18n="project_cargopulse_desc_1"></p>
+                        <p class="text-muted" data-i18n="project_cargopulse_desc_2"></p>
+
+                        <div class="d-flex flex-wrap gap-2 mb-4" aria-label="Tecnologias do CargoPulse">
+                            <span class="badge rounded-pill text-bg-light border">React</span>
+                            <span class="badge rounded-pill text-bg-light border">TypeScript</span>
+                            <span class="badge rounded-pill text-bg-light border">NestJS</span>
+                            <span class="badge rounded-pill text-bg-light border">Prisma</span>
+                            <span class="badge rounded-pill text-bg-light border">PostgreSQL</span>
+                            <span class="badge rounded-pill text-bg-light border">Docker</span>
+                        </div>
+
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="https://cargopulse.lucianoferreiradev.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="bi bi-box-arrow-up-right me-2"></i>Acessar aplicação
+                            </a>
+                            <a href="https://github.com/LucianoSF1992/cargopulse-logistics-platform" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary">
+                                <i class="bi bi-github me-2"></i>Ver código-fonte
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- SKILLS -->
-
-            <div class="col-lg-4">
-
+            <aside class="col-lg-4">
                 <div class="card border-0 shadow rounded-4">
-
                     <div class="card-body p-4">
+                        <h2 class="h4 fw-bold mb-4 text-center" data-i18n="about_skills_title"></h2>
 
-                        <h4 class="fw-bold mb-4 text-center" data-i18n="about_skills_title">
-                        </h4>
-
-                        <!-- Backend -->
-
-                        <h6 class="text-primary fw-bold mb-3">
-
-                            <i class="bi bi-server me-2"></i>
-
-                            <span data-i18n="about_backend_title"></span>
-
-                        </h6>
-
+                        <h3 class="h6 text-primary fw-bold mb-3">
+                            <i class="bi bi-server me-2"></i><span data-i18n="about_backend_title"></span>
+                        </h3>
                         <ul class="list-unstyled mb-4">
+                            @for (var i = 1; i <= 6; i++)
+                            {
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span data-i18n="about_backend_@i"></span></li>
+                            }
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Node.js</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>NestJS</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Prisma</li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>PostgreSQL</li>
+                        </ul>
 
-                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                data-i18n="about_backend_1"></span></li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                    data-i18n="about_backend_2"></span></li>
-                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                        data-i18n="about_backend_3"></span></li>
-                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                            data-i18n="about_backend_4"></span></li>
-                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                data-i18n="about_backend_5"></span></li>
-                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                    data-i18n="about_backend_6"></span></li>
+                        <h3 class="h6 text-primary fw-bold mb-3">
+                            <i class="bi bi-window me-2"></i><span data-i18n="about_frontend_title"></span>
+                        </h3>
+                        <ul class="list-unstyled mb-4">
+                            @for (var i = 1; i <= 6; i++)
+                            {
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span data-i18n="about_frontend_@i"></span></li>
+                            }
+                        </ul>
 
-                                                </ul>
-
-                                                <!-- Frontend -->
-
-                                                <h6 class="text-primary fw-bold mb-3">
-
-                                                    <i class="bi bi-window me-2"></i>
-
-                                                    <span data-i18n="about_frontend_title"></span>
-
-                                                </h6>
-
-                                                <ul class="list-unstyled mb-4">
-
-                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                        data-i18n="about_frontend_1"></span></li>
-                                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                            data-i18n="about_frontend_2"></span></li>
-                                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                data-i18n="about_frontend_3"></span></li>
-                                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                    data-i18n="about_frontend_4"></span></li>
-                                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                        data-i18n="about_frontend_5"></span></li>
-                                                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                            data-i18n="about_frontend_6"></span></li>
-
-                                                                        </ul>
-
-                                                                        <!-- DevOps -->
-
-                                                                        <h6 class="text-primary fw-bold mb-3">
-
-                                                                            <i class="bi bi-cloud-arrow-up me-2"></i>
-
-                                                                            <span data-i18n="about_devops_title"></span>
-
-                                                                        </h6>
-
-                                                                        <ul class="list-unstyled mb-0">
-
-                                                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                                data-i18n="about_devops_1"></span></li>
-                                                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                                    data-i18n="about_devops_2"></span></li>
-                                                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                                        data-i18n="about_devops_3"></span></li>
-                                                                                        <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                                            data-i18n="about_devops_4"></span></li>
-                                                                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                                                data-i18n="about_devops_5"></span></li>
-                                                                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i><span
-                                                                                                    data-i18n="about_devops_6"></span></li>
-
-                                                                                                </ul>
-
-                                                                                            </div>
-
-                                                                                        </div>
-
-                                                                                    </div>
-
-                                                                                </div>
-
-                                                                            </div>
-
-                                                                        </section>
+                        <h3 class="h6 text-primary fw-bold mb-3">
+                            <i class="bi bi-cloud-arrow-up me-2"></i><span data-i18n="about_devops_title"></span>
+                        </h3>
+                        <ul class="list-unstyled mb-0">
+                            @for (var i = 1; i <= 6; i++)
+                            {
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i><span data-i18n="about_devops_@i"></span></li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
