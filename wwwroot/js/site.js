@@ -137,6 +137,10 @@ window.translations = {
         about_btn_projects:
             "Ver projetos",
 
+        about_btn_source: "Ver código-fonte",
+
+        about_btn_application: "Acessar aplicação",
+
         about_name:
             "Luciano Silva Ferreira",
 
@@ -517,6 +521,10 @@ window.translations = {
         about_btn_projects:
             "View Projects",
 
+        about_btn_source: "View source code",
+
+        about_btn_application: "Access application",
+
         about_name:
             "Luciano Silva Ferreira",
 
@@ -845,6 +853,10 @@ window.translations = {
 
         about_btn_projects:
             "Ver proyectos",
+
+        about_btn_source: "Ver código fuente",
+
+        about_btn_application: "Acceder a la aplicación",
 
         about_name:
             "Luciano Silva Ferreira",
