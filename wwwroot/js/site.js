@@ -33,10 +33,10 @@ window.translations = {
         home_hero_name: "Luciano Silva Ferreira",
 
         home_hero_subtitle:
-            "Desenvolvedor Full Stack com experiência em .NET e tecnologias modernas de desenvolvimento web.",
+            "Desenvolvedor Full Stack com experiência em .NET, Node.js, Laravel e tecnologias modernas de desenvolvimento web.",
 
         home_hero_description:
-            "Construindo sistemas completos — do backend estruturado ao frontend responsivo — com foco em performance, escalabilidade e boas práticas.",
+            "Desenvolvo aplicações web full stack, APIs REST e sistemas completos, utilizando diferentes tecnologias e bancos de dados, com experiência prática em Docker, Linux e deploy de aplicações.",
 
         home_btn_projects: "Ver Projetos",
 
@@ -82,6 +82,15 @@ window.translations = {
         home_stack_docker_desc:
             "Containers, deploy e ambientes Linux.",
 
+        home_stack_php_desc:
+            "Desenvolvimento backend e APIs REST com PHP e Laravel.",
+
+        home_stack_vue_desc:
+            "Aplicações SPA com Vue 3, TypeScript, Pinia e Vue Router.",
+
+        home_stack_mysql_desc:
+            "Banco de dados relacional e persistência de informações.",
+
         home_stack_node_desc:
             "Desenvolvimento backend e APIs com JavaScript e TypeScript.",
 
@@ -89,7 +98,7 @@ window.translations = {
             "Principais Projetos",
 
         home_projects_subtitle:
-            "Projetos desenvolvidos utilizando tecnologias modernas, arquitetura limpa e foco em performance.",
+            "Projetos autorais que demonstram desenvolvimento Full Stack, integração entre tecnologias, persistência de dados e publicação de aplicações online.",
 
         home_project_devclub:
             "Plataforma Full Stack desenvolvida com ASP.NET Core, Next.js, React e TypeScript.",
@@ -110,7 +119,7 @@ window.translations = {
             "Vamos construir algo incrível juntos?",
 
         home_cta_description:
-            "Estou disponível para oportunidades como Desenvolvedor Full Stack, Backend .NET ou Frontend, contribuindo com soluções modernas, escaláveis e de alta qualidade.",
+            "Estou disponível para oportunidades como Desenvolvedor Full Stack, Backend .NET ou Frontend, contribuindo no desenvolvimento de APIs, aplicações web e soluções completas, do código ao deploy.",
 
         // =====================================
         // SOBRE
@@ -242,6 +251,23 @@ window.translations = {
 
         project_status_development:
             "Em desenvolvimento",
+
+        // LegalFlow
+
+        project_legalflow_title:
+            "LegalFlow — Sistema de Gestão Jurídica",
+
+        project_legalflow_desc:
+            "Sistema demonstrativo de gestão jurídica desenvolvido com Laravel 12, PHP 8.4, Vue 3, TypeScript e MySQL 8.4. Possui autenticação, dashboard, gestão de clientes, processos, tarefas e documentos.",
+
+        project_legalflow_tech:
+            "Backend Laravel, frontend Vue 3, banco MySQL e deploy com Docker, Nginx e Linux.",
+
+        project_legalflow_status:
+            "Projeto publicado",
+
+        project_btn_demo:
+            "Demonstração online",
 
         // CargoPulse
 
@@ -387,10 +413,10 @@ window.translations = {
         home_hero_name: "Luciano Silva Ferreira",
 
         home_hero_subtitle:
-            "Full Stack Developer with experience in .NET and modern web development technologies.",
+            "Full Stack Developer experienced in .NET, Node.js, Laravel and modern web development technologies.",
 
         home_hero_description:
-            "Building complete systems—from structured back-end to responsive front-end—with a focus on performance, scalability and software engineering best practices.",
+            "I build full stack web applications, REST APIs and complete systems using different technologies and databases, with hands-on experience in Docker, Linux and application deployment.",
 
         home_btn_projects: "View Projects",
 
@@ -436,6 +462,15 @@ window.translations = {
         home_stack_docker_desc:
             "Containers, deployment and Linux environments.",
 
+        home_stack_php_desc:
+            "Backend development and REST APIs with PHP and Laravel.",
+
+        home_stack_vue_desc:
+            "SPA development with Vue 3, TypeScript, Pinia and Vue Router.",
+
+        home_stack_mysql_desc:
+            "Relational database and data persistence.",
+
         home_stack_node_desc:
             "Backend development and APIs with JavaScript and TypeScript.",
 
@@ -443,7 +478,7 @@ window.translations = {
             "Featured Projects",
 
         home_projects_subtitle:
-            "Projects developed using modern technologies, Clean Architecture and performance-oriented solutions.",
+            "Personal projects showcasing Full Stack development, technology integration, data persistence and live application deployment.",
 
         home_project_devclub:
             "Full Stack platform built with ASP.NET Core, Next.js, React and TypeScript.",
@@ -464,7 +499,7 @@ window.translations = {
             "Let's build something amazing together?",
 
         home_cta_description:
-            "I'm available for opportunities as a Full Stack Developer, .NET Backend Developer or Frontend Developer, delivering modern, scalable and high-quality solutions.",
+            "I'm available for Full Stack Developer, .NET Backend Developer and Frontend Developer opportunities, contributing to APIs, web applications and complete solutions from development to deployment.",
 
         // =====================================
         // ABOUT
@@ -557,6 +592,23 @@ window.translations = {
 
         project_status_development:
             "In Development",
+
+        // LegalFlow
+
+        project_legalflow_title:
+            "LegalFlow — Legal Management System",
+
+        project_legalflow_desc:
+            "A demonstrative legal management system built with Laravel 12, PHP 8.4, Vue 3, TypeScript and MySQL 8.4. Features authentication, dashboard, client, case, task and document management.",
+
+        project_legalflow_tech:
+            "Laravel backend, Vue 3 frontend, MySQL database and deployment with Docker, Nginx and Linux.",
+
+        project_legalflow_status:
+            "Published project",
+
+        project_btn_demo:
+            "Live demo",
 
         // CargoPulse
 
@@ -690,10 +742,10 @@ window.translations = {
         home_hero_name: "Luciano Silva Ferreira",
 
         home_hero_subtitle:
-            "Desarrollador Full Stack con experiencia en .NET y tecnologías modernas de desarrollo web.",
+            "Desarrollador Full Stack con experiencia en .NET, Node.js, Laravel y tecnologías modernas de desarrollo web.",
 
         home_hero_description:
-            "Construyendo sistemas completos, desde un backend estructurado hasta un frontend responsivo, con enfoque en rendimiento, escalabilidad y buenas prácticas de desarrollo.",
+            "Desarrollo aplicaciones web Full Stack, APIs REST y sistemas completos utilizando diferentes tecnologías y bases de datos, con experiencia práctica en Docker, Linux y despliegue de aplicaciones.",
 
         home_btn_projects: "Ver Proyectos",
 
@@ -739,6 +791,15 @@ window.translations = {
         home_stack_docker_desc:
             "Contenedores, despliegue y entornos Linux.",
 
+        home_stack_php_desc:
+            "Desarrollo backend y APIs REST con PHP y Laravel.",
+
+        home_stack_vue_desc:
+            "Aplicaciones SPA con Vue 3, TypeScript, Pinia y Vue Router.",
+
+        home_stack_mysql_desc:
+            "Base de datos relacional y persistencia de información.",
+
         home_stack_node_desc:
             "Desarrollo backend y APIs con JavaScript y TypeScript.",
 
@@ -746,7 +807,7 @@ window.translations = {
             "Proyectos Destacados",
 
         home_projects_subtitle:
-            "Proyectos desarrollados utilizando tecnologías modernas, Clean Architecture y soluciones enfocadas en el rendimiento.",
+            "Proyectos propios que demuestran desarrollo Full Stack, integración de tecnologías, persistencia de datos y publicación de aplicaciones online.",
 
         home_project_devclub:
             "Plataforma Full Stack desarrollada con ASP.NET Core, Next.js, React y TypeScript.",
@@ -767,7 +828,7 @@ window.translations = {
             "¿Construimos algo increíble juntos?",
 
         home_cta_description:
-            "Estoy disponible para oportunidades como Desarrollador Full Stack, Backend .NET o Frontend, contribuyendo con soluciones modernas, escalables y de alta calidad.",
+            "Estoy disponible para oportunidades como Desarrollador Full Stack, Backend .NET o Frontend, contribuyendo al desarrollo de APIs, aplicaciones web y soluciones completas, desde el código hasta el despliegue.",
 
         // =====================================
         // SOBRE
@@ -860,6 +921,23 @@ window.translations = {
 
         project_status_development:
             "En Desarrollo",
+
+        // LegalFlow
+
+        project_legalflow_title:
+            "LegalFlow — Sistema de Gestión Jurídica",
+
+        project_legalflow_desc:
+            "Sistema demostrativo de gestión jurídica desarrollado con Laravel 12, PHP 8.4, Vue 3, TypeScript y MySQL 8.4. Incluye autenticación, panel de control y gestión de clientes, procesos, tareas y documentos.",
+
+        project_legalflow_tech:
+            "Backend Laravel, frontend Vue 3, base de datos MySQL y despliegue con Docker, Nginx y Linux.",
+
+        project_legalflow_status:
+            "Proyecto publicado",
+
+        project_btn_demo:
+            "Demostración online",
 
         // CargoPulse
 
